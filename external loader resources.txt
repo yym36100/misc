@@ -1,0 +1,18 @@
+source code in the tool folder: d:\Tools\Rare\ST\STM32Cube\STM32CubeProgrammer\bin\ExternalLoader\ (or in stlink folder)
+
+howto page:
+https://community.st.com/t5/stm32-mcus/how-to-add-your-spi-flash-into-the-stm32cubeprogrammer-s/ta-p/49392
+https://community.st.com/t5/stm32-mcus/how-to-add-your-spi-flash-into-the-stm32cubeprogrammer-s/ta-p/49400
+
+stlink user manual:
+https://www.st.com/content/ccc/resource/technical/document/user_manual/e6/10/d8/80/d6/1d/4a/f2/CD00262073.pdf/files/CD00262073.pdf/jcr:content/translations/en.CD00262073.pdf
+
+forum thread:
+https://community.st.com/t5/stm32-mcus-products/how-to-building-a-custom-external-loader-for-a-custom-board/td-p/400304
+
+
+1. "AN4760": 4.1.1 Programming QSPI Flash memory using the STM32 ST-LINK utility
+2. "UM0892": 3.9 Developing customized loaders for external memory
+3. "UM2237": 2.3.3 Developing customized loaders for external memory
+
+
