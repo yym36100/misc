@@ -1,0 +1,8 @@
+*.suo
+*.sln
+*.ncb
+debug/
+myterm/.vs/
+*.vcxproj
+*.filters
+*.user
