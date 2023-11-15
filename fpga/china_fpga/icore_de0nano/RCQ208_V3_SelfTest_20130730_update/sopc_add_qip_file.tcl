@@ -1,0 +1,3 @@
+project_open -current_revision "D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RedCore_2C8V3_Nios_Example.qpf"
+set_global_assignment -name QIP_FILE "RC_2C8V3_Nios_CPU.qip"
+project_close

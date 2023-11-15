@@ -1,0 +1,177 @@
+Altera SOPC Builder Version 12.00 Build 178
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2013.07.30 17:52:04 (*) mk_custom_sdk starting
+# 2013.07.30 17:52:04 (*) Reading project D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU.ptf.
+
+# 2013.07.30 17:52:05 (*) Finding all CPUs
+# 2013.07.30 17:52:05 (*) Finding all available components
+# 2013.07.30 17:52:05 (*) Reading D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/.sopc_builder/install.ptf
+
+# 2013.07.30 17:52:05 (*) Found 63 components
+
+# 2013.07.30 17:52:07 (*) Finding all peripherals
+
+# 2013.07.30 17:52:07 (*) Finding software components
+
+# 2013.07.30 17:52:08 (*) (Legacy SDK Generation Skipped)
+# 2013.07.30 17:52:08 (*) (All TCL Script Generation Skipped)
+# 2013.07.30 17:52:08 (*) (No Libraries Built)
+# 2013.07.30 17:52:08 (*) (Contents Generation Skipped)
+# 2013.07.30 17:52:08 (*) mk_custom_sdk finishing
+
+# 2013.07.30 17:52:08 (*) Starting generation for system: RC_2C8V3_Nios_CPU.
+
+.
+.
+.
+.
+.................
+....
+.....
+......
+...
+.
+...
+..
+
+# 2013.07.30 17:52:11 (*) Running Generator Program for cpu_0
+
+# 2013.07.30 17:52:13 (*) Starting Nios II generation
+# 2013.07.30 17:52:13 (*)   Checking for plaintext license.
+# 2013.07.30 17:52:14 (*)   Plaintext license not found.
+# 2013.07.30 17:52:14 (*)   Checking for encrypted license (non-evaluation).
+# 2013.07.30 17:52:14 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2013.07.30 17:52:14 (*)   Getting CPU configuration settings
+# 2013.07.30 17:52:14 (*)   Elaborating CPU configuration settings
+# 2013.07.30 17:52:14 (*)   Creating all objects for CPU
+
+# 2013.07.30 17:52:14 (*)     Testbench
+# 2013.07.30 17:52:15 (*)     Instruction decoding
+# 2013.07.30 17:52:15 (*)       Instruction fields
+# 2013.07.30 17:52:15 (*)       Instruction decodes
+# 2013.07.30 17:52:17 (*)       Signals for RTL simulation waveforms
+# 2013.07.30 17:52:17 (*)       Instruction controls
+# 2013.07.30 17:52:17 (*)     Pipeline frontend
+# 2013.07.30 17:52:17 (*)     Pipeline backend
+# 2013.07.30 17:52:23 (*)   Generating HDL from CPU objects
+# 2013.07.30 17:52:28 (*)   Creating encrypted HDL
+
+# 2013.07.30 17:52:31 (*) Done Nios II generation
+
+# 2013.07.30 17:52:32 (*) Running Generator Program for epcs_flash_controller_0
+
+# 2013.07.30 17:52:35 (*) Running Generator Program for sdram_0
+
+# 2013.07.30 17:52:38 (*) Running Generator Program for uart_0
+
+# 2013.07.30 17:52:41 (*) Running Generator Program for LCD_DATA
+
+# 2013.07.30 17:52:44 (*) Running Generator Program for LCD_CS
+
+# 2013.07.30 17:52:46 (*) Running Generator Program for LCD_RS
+
+# 2013.07.30 17:52:49 (*) Running Generator Program for LCD_RD
+
+# 2013.07.30 17:52:51 (*) Running Generator Program for LCD_RST
+
+# 2013.07.30 17:52:53 (*) Running Generator Program for LCD_WR
+
+# 2013.07.30 17:52:56 (*) Running Generator Program for TEMP_DATA
+
+# 2013.07.30 17:52:58 (*) Running Generator Program for PS2_DATA_REC
+
+# 2013.07.30 17:53:01 (*) Running Generator Program for UART_RX_DATA
+
+# 2013.07.30 17:53:03 (*) Running Generator Program for RTC_DATA
+
+# 2013.07.30 17:53:06 (*) Running Generator Program for IR_DATA
+
+# 2013.07.30 17:53:09 (*) Running Generator Program for KEY_FOCUS
+
+# 2013.07.30 17:53:11 (*) Running Generator Program for LED_DATA
+
+# 2013.07.30 17:53:14 (*) Running Generator Program for BUZZER_DATA
+
+# 2013.07.30 17:53:16 (*) Running Generator Program for DAC_DATA
+
+# 2013.07.30 17:53:19 (*) Running Generator Program for ADC_DATA
+
+# 2013.07.30 17:53:21 (*) Running Generator Program for SD_CS
+
+# 2013.07.30 17:53:24 (*) Running Generator Program for SD_DI
+
+# 2013.07.30 17:53:26 (*) Running Generator Program for SD_CLK
+
+# 2013.07.30 17:53:28 (*) Running Generator Program for SD_DO
+
+# 2013.07.30 17:53:31 (*) Running Generator Program for USB_SCS_O
+
+# 2013.07.30 17:53:33 (*) Running Generator Program for USB_SDO_I
+
+# 2013.07.30 17:53:36 (*) Running Generator Program for USB_SDI_O
+
+# 2013.07.30 17:53:38 (*) Running Generator Program for USB_SCK_O
+
+# 2013.07.30 17:53:41 (*) Running Generator Program for USB_INT_I
+
+# 2013.07.30 17:53:43 (*) Running Generator Program for USB_RST_O
+
+# 2013.07.30 17:53:45 (*) Running Generator Program for USB_PC_I
+
+# 2013.07.30 17:53:48 (*) Running Generator Program for ETH_RESET_O
+
+# 2013.07.30 17:53:50 (*) Running Generator Program for ETH_SCK_O
+
+# 2013.07.30 17:53:52 (*) Running Generator Program for ETH_SI_O
+
+# 2013.07.30 17:53:55 (*) Running Generator Program for ETH_SO_I
+
+# 2013.07.30 17:53:58 (*) Running Generator Program for ETH_CLKOUT_I
+
+# 2013.07.30 17:54:00 (*) Running Generator Program for ETH_INT_I
+
+# 2013.07.30 17:54:02 (*) Running Generator Program for ETH_CS_O
+
+# 2013.07.30 17:54:05 (*) Running Generator Program for ETH_WOL_I
+
+# 2013.07.30 17:54:07 (*) Running Generator Program for timer_0
+
+# 2013.07.30 17:54:10 (*) Running Generator Program for SCL
+
+# 2013.07.30 17:54:12 (*) Running Generator Program for SDA
+
+# 2013.07.30 17:54:15 (*) Running Generator Program for TUBE_EN
+
+# 2013.07.30 17:54:17 (*) Running Generator Program for sysid_0
+
+# 2013.07.30 17:54:19 (*) Running Generator Program for timer_1
+
+.
+
+
+# 2013.07.30 17:54:22 (*) Running Test Generator Program for sdram_0
+
+# 2013.07.30 17:54:23 (*) Making arbitration and system (top) modules.
+
+# 2013.07.30 17:55:00 (*) Generating Quartus symbol for top level: RC_2C8V3_Nios_CPU
+
+# 2013.07.30 17:55:00 (*) Symbol D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU.bsf already exists, no need to regenerate
+# 2013.07.30 17:55:00 (*) Creating command-line system-generation script: D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU_generation_script
+
+# 2013.07.30 17:55:00 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.07.30 17:55:02 (*) Completed generation for system: RC_2C8V3_Nios_CPU.
+# 2013.07.30 17:55:02 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU.ptf 
+  System HDL Model : D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU.v 
+  System Generation Script : D:/CD_BAK/RCQ208_V3_CH_EDITION/04_Nios_Examples/RCQ208_V3_SelfTest_20130128_update/RC_2C8V3_Nios_CPU_generation_script 
+
+
+# 2013.07.30 17:55:02 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

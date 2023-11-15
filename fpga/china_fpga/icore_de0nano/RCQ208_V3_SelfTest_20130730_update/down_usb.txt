@@ -1,0 +1,12 @@
+clear
+
+rm -vf ./flash/*
+
+nios2-configure-sof RedCore_2C8V3_Nios_Example.sof  --cable='USB-Blaster [USB-0]'; 
+
+sof2flash --input="./RedCore_2C8V3_Nios_Example.sof" --output="./flash/sof.flash" --epcs --compress  
+elf2flash --input="./software/V3_SELFTEST_UCOS/V3_SELFTEST_UCOS.elf" --output="./flash/elf.flash" --epcs --compress --after="./flash/sof.flash" 
+
+
+nios2-flash-programmer --cable='USB-Blaster [USB-0]' --epcs --base=0x4001800 "./flash/sof.flash"
+nios2-flash-programmer --cable='USB-Blaster [USB-0]' --epcs --base=0x4001800 "./flash/elf.flash" --go

@@ -1,0 +1,215 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "dso"  ASSIGNED TO AN: EP4CE6E22C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+SD_D[12]                     : 1         : bidir  : 2.5 V             :         : 1         : Y              
+SD_D[11]                     : 2         : bidir  : 2.5 V             :         : 1         : Y              
+SD_D[10]                     : 3         : bidir  : 2.5 V             :         : 1         : Y              
+GND                          : 4         : gnd    :                   :         :           :                
+VCCINT                       : 5         : power  :                   : 1.2V    :           :                
+ASDO                         : 6         : output : 2.5 V             :         : 1         : Y              
+SD_D[9]                      : 7         : bidir  : 2.5 V             :         : 1         : Y              
+NCSO                         : 8         : output : 2.5 V             :         : 1         : Y              
+nSTATUS                      : 9         :        :                   :         : 1         :                
+SD_D[8]                      : 10        : bidir  : 2.5 V             :         : 1         : Y              
+SD_DQM[1]                    : 11        : output : 2.5 V             :         : 1         : Y              
+DCLK                         : 12        : bidir  : 2.5 V             :         : 1         : Y              
+DATA0                        : 13        : input  : 2.5 V             :         : 1         : Y              
+nCONFIG                      : 14        :        :                   :         : 1         :                
+altera_reserved_tdi          : 15        : input  : 2.5 V             :         : 1         : N              
+altera_reserved_tck          : 16        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : 17        : power  :                   : 2.5V    : 1         :                
+altera_reserved_tms          : 18        : input  : 2.5 V             :         : 1         : N              
+GND                          : 19        : gnd    :                   :         :           :                
+altera_reserved_tdo          : 20        : output : 2.5 V             :         : 1         : N              
+nCE                          : 21        :        :                   :         : 1         :                
+GND                          : 22        : gnd    :                   :         :           :                
+FPGA_CLK                     : 23        : input  : 2.5 V             :         : 1         : Y              
+FPGA_CS                      : 24        : input  : 2.5 V             :         : 2         : Y              
+AB[2]                        : 25        : input  : 2.5 V             :         : 2         : Y              
+VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
+GND                          : 27        : gnd    :                   :         :           :                
+SD_CKE                       : 28        : output : 2.5 V             :         : 2         : Y              
+VCCINT                       : 29        : power  :                   : 1.2V    :           :                
+SD_A[11]                     : 30        : output : 2.5 V             :         : 2         : Y              
+SD_A[9]                      : 31        : output : 2.5 V             :         : 2         : Y              
+SD_A[8]                      : 32        : output : 2.5 V             :         : 2         : Y              
+SD_A[7]                      : 33        : output : 2.5 V             :         : 2         : Y              
+SD_A[6]                      : 34        : output : 2.5 V             :         : 2         : Y              
+VCCA1                        : 35        : power  :                   : 2.5V    :           :                
+GNDA1                        : 36        : gnd    :                   :         :           :                
+VCCD_PLL1                    : 37        : power  :                   : 1.2V    :           :                
+SD_A[5]                      : 38        : output : 2.5 V             :         : 3         : Y              
+SD_A[4]                      : 39        : output : 2.5 V             :         : 3         : Y              
+VCCIO3                       : 40        : power  :                   : 2.5V    : 3         :                
+GND                          : 41        : gnd    :                   :         :           :                
+SD_D[6]                      : 42        : bidir  : 2.5 V             :         : 3         : Y              
+SD_CLK                       : 43        : output : 2.5 V             :         : 3         : Y              
+SD_D[7]                      : 44        : bidir  : 2.5 V             :         : 3         : Y              
+VCCINT                       : 45        : power  :                   : 1.2V    :           :                
+SD_DQM[0]                    : 46        : output : 2.5 V             :         : 3         : Y              
+VCCIO3                       : 47        : power  :                   : 2.5V    : 3         :                
+GND                          : 48        : gnd    :                   :         :           :                
+SD_WE                        : 49        : output : 2.5 V             :         : 3         : Y              
+SD_CAS                       : 50        : output : 2.5 V             :         : 3         : Y              
+SD_RAS                       : 51        : output : 2.5 V             :         : 3         : Y              
+SD_CS                        : 52        : output : 2.5 V             :         : 3         : Y              
+SD_BA[0]                     : 53        : output : 2.5 V             :         : 3         : Y              
+SD_BA[1]                     : 54        : output : 2.5 V             :         : 4         : Y              
+SD_A[10]                     : 55        : output : 2.5 V             :         : 4         : Y              
+VCCIO4                       : 56        : power  :                   : 2.5V    : 4         :                
+GND                          : 57        : gnd    :                   :         :           :                
+SD_A[0]                      : 58        : output : 2.5 V             :         : 4         : Y              
+SD_A[1]                      : 59        : output : 2.5 V             :         : 4         : Y              
+SD_A[2]                      : 60        : output : 2.5 V             :         : 4         : Y              
+VCCINT                       : 61        : power  :                   : 1.2V    :           :                
+VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
+GND                          : 63        : gnd    :                   :         :           :                
+SD_A[3]                      : 64        : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 65        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 66        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 67        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 68        :        :                   :         : 4         :                
+IO[0]                        : 69        : output : 2.5 V             :         : 4         : Y              
+LED_FPGA                     : 70        : output : 2.5 V             :         : 4         : Y              
+ARB_D[0]                     : 71        : output : 2.5 V             :         : 4         : Y              
+ARB_D[1]                     : 72        : output : 2.5 V             :         : 4         : Y              
+ARB_D[2]                     : 73        : output : 2.5 V             :         : 5         : Y              
+ARB_D[3]                     : 74        : output : 2.5 V             :         : 5         : Y              
+ARB_D[4]                     : 75        : output : 2.5 V             :         : 5         : Y              
+ARB_D[5]                     : 76        : output : 2.5 V             :         : 5         : Y              
+ARB_D[6]                     : 77        : output : 2.5 V             :         : 5         : Y              
+VCCINT                       : 78        : power  :                   : 1.2V    :           :                
+GND                          : 79        : gnd    :                   :         :           :                
+ARB_D[7]                     : 80        : output : 2.5 V             :         : 5         : Y              
+VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
+GND                          : 82        : gnd    :                   :         :           :                
+ARB_CLK                      : 83        : output : 2.5 V             :         : 5         : Y              
+TRIGIN                       : 84        : input  : 2.5 V             :         : 5         : Y              
+DSO_CLK                      : 85        : output : 2.5 V             :         : 5         : Y              
+DSO_D[7]                     : 86        : input  : 2.5 V             :         : 5         : Y              
+DSO_D[6]                     : 87        : input  : 2.5 V             :         : 5         : Y              
+DSO_D[5]                     : 88        : input  : 2.5 V             :         : 5         : Y              
+DSO_D[4]                     : 89        : input  : 2.5 V             :         : 5         : Y              
+DSO_D[3]                     : 90        : input  : 2.5 V             :         : 6         : Y              
+DSO_D[2]                     : 91        : input  : 2.5 V             :         : 6         : Y              
+CONF_DONE                    : 92        :        :                   :         : 6         :                
+VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
+MSEL0                        : 94        :        :                   :         : 6         :                
+GND                          : 95        : gnd    :                   :         :           :                
+MSEL1                        : 96        :        :                   :         : 6         :                
+MSEL2                        : 97        :        :                   :         : 6         :                
+DSO_D[1]                     : 98        : input  : 2.5 V             :         : 6         : Y              
+DSO_D[0]                     : 99        : input  : 2.5 V             :         : 6         : Y              
+CPLD_CLK                     : 100       : output : 2.5 V             :         : 6         : Y              
+WR                           : 101       : input  : 2.5 V             :         : 6         : Y              
+VCCINT                       : 102       : power  :                   : 1.2V    :           :                
+RD                           : 103       : input  : 2.5 V             :         : 6         : Y              
+DB[3]                        : 104       : bidir  : 2.5 V             :         : 6         : Y              
+DB[2]                        : 105       : bidir  : 2.5 V             :         : 6         : Y              
+DB[4]                        : 106       : bidir  : 2.5 V             :         : 6         : Y              
+VCCA2                        : 107       : power  :                   : 2.5V    :           :                
+GNDA2                        : 108       : gnd    :                   :         :           :                
+VCCD_PLL2                    : 109       : power  :                   : 1.2V    :           :                
+DB[5]                        : 110       : bidir  : 2.5 V             :         : 7         : Y              
+DB[6]                        : 111       : bidir  : 2.5 V             :         : 7         : Y              
+DB[7]                        : 112       : bidir  : 2.5 V             :         : 7         : Y              
+DB[8]                        : 113       : bidir  : 2.5 V             :         : 7         : Y              
+DB[9]                        : 114       : bidir  : 2.5 V             :         : 7         : Y              
+DB[10]                       : 115       : bidir  : 2.5 V             :         : 7         : Y              
+VCCINT                       : 116       : power  :                   : 1.2V    :           :                
+VCCIO7                       : 117       : power  :                   : 2.5V    : 7         :                
+GND                          : 118       : gnd    :                   :         :           :                
+DB[11]                       : 119       : bidir  : 2.5 V             :         : 7         : Y              
+DB[12]                       : 120       : bidir  : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 121       :        :                   :         : 7         :                
+VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
+GND                          : 123       : gnd    :                   :         :           :                
+DB[13]                       : 124       : bidir  : 2.5 V             :         : 7         : Y              
+DB[14]                       : 125       : bidir  : 2.5 V             :         : 7         : Y              
+DB[15]                       : 126       : bidir  : 2.5 V             :         : 7         : Y              
+AB[0]                        : 127       : input  : 2.5 V             :         : 7         : Y              
+AB[1]                        : 128       : input  : 2.5 V             :         : 8         : Y              
+DB[0]                        : 129       : bidir  : 2.5 V             :         : 8         : Y              
+VCCIO8                       : 130       : power  :                   : 2.5V    : 8         :                
+GND                          : 131       : gnd    :                   :         :           :                
+DB[1]                        : 132       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[0]                      : 133       : bidir  : 2.5 V             :         : 8         : Y              
+VCCINT                       : 134       : power  :                   : 1.2V    :           :                
+SD_D[1]                      : 135       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[2]                      : 136       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[3]                      : 137       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[4]                      : 138       : bidir  : 2.5 V             :         : 8         : Y              
+VCCIO8                       : 139       : power  :                   : 2.5V    : 8         :                
+GND                          : 140       : gnd    :                   :         :           :                
+SD_D[5]                      : 141       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[15]                     : 142       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[14]                     : 143       : bidir  : 2.5 V             :         : 8         : Y              
+SD_D[13]                     : 144       : bidir  : 2.5 V             :         : 8         : Y              
+GND                          : EPAD      :        :                   :         :           :                

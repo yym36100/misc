@@ -1,0 +1,5 @@
+PLL_Name	de0_test1_pll:inst1|altpll:altpll_component|de0_test1_pll_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+

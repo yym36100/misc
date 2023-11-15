@@ -1,0 +1,676 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Report</title>
+  <style type="text/css">
+body { font-family:arial ;}
+a { text-decoration:underline ; color:#003000 ;}
+a:hover { text-decoration:underline ; color:0030f0 ;}
+td { padding : 5px ;}
+table.topTitle { width:100% ;}
+table.topTitle td.l { text-align:left ; font-weight: bold ; font-size:30px ;}
+table.topTitle td.r { text-align:right ; font-weight: bold ; font-size:16px ;}
+table.blueBar { width : 100% ; border-spacing : 0px ;}
+table.blueBar td { background:#0036ff ; font-size:12px ; color : white ; text-align : left ; font-weight : bold ;}
+table.blueBar td.l { text-align : left ;}
+table.blueBar td.r { text-align : right ;}
+table.items { width:100% ; border-collapse:collapse ;}
+table.items td.label { font-weight:bold ; font-size:16px ; vertical-align:top ;}
+table.items td.mono { font-family:courier ; font-size:12px ; white-space:pre ;}
+div.label { font-weight:bold ; font-size:16px ; vertical-align:top ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ; font-size:12px ;}
+body { font-family:arial ;}
+table.x { font-family:courier ; border-collapse:collapse ; padding:2px ;}
+table.x td { border:1px solid #bbb ;}
+td.tableTitle { font-weight:bold ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ;}
+table.grid td.tableTitle { font-weight:bold ; text-align:center ;}
+table.mmap { border-collapse:collapse ; text-size:11px ; border:1px solid #d8d8d8 ;}
+table.mmap td { border-color:#d8d8d8 ; border-width:1px ; border-style:solid ;}
+table.mmap td.empty { border-style:none ; background-color:#f0f0f0 ;}
+table.mmap td.slavemodule { text-align:left ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.slavem { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid none solid ;}
+table.mmap td.slaveb { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.mastermodule { text-align:center ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.masterlr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.masterl { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid solid ;}
+table.mmap td.masterm { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid none ;}
+table.mmap td.masterr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid none ;}
+table.mmap td.addr { font-family:courier ; font-size:9px ; text-align:right ;}
+table.connectionboxes { border-collapse:separate ; border-spacing:0px ; font-family:arial ;}
+table.connectionboxes td.from { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.to { font-size:9px ; font-style:italic ; vertical-align:top ; text-align:right ;}
+table.connectionboxes td.lefthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:right ;}
+table.connectionboxes td.righthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.righthandlabel { font-size:11px ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.neighbor { padding:3px ; border:1px solid black ; font-size: 11px ; background:#e8e8e8 ; vertical-align:center ; text-align:center ;}
+table.connectionboxes td.main { padding:8px ; border:1px solid black ; font-size: 14px ; font-weight:bold ; background:#ffffff ; vertical-align:center ; text-align:center ;}
+.parametersbox { border:1px solid #d0d0d0 ; display:inline-block ; max-height:160px ; overflow:auto ; width:360px ; font-size:10px ;}
+.flowbox { display:inline-block ;}
+.parametersbox table { font-size:10px ;}
+td.parametername { font-style:italic ;}
+td.parametervalue { font-weight:bold ;}
+div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; border-top:1px solid #707070 ; border-bottom:1px solid #707070 ; padding:20px ; margin:20px ; width:auto ;}</style>
+ </head>
+ <body>
+  <table class="topTitle">
+   <tr>
+    <td class="l">nios2_iboard</td>
+    <td class="r">nios2_iboard
+     <br/>1.0
+     <br/>
+    </td>
+   </tr>
+  </table>
+  <table class="blueBar">
+   <tr>
+    <td class="l">2012.03.28.02:43:42</td>
+    <td class="r">Generation Report</td>
+   </tr>
+  </table>
+  <table class="items">
+   <tr>
+    <td class="label">Output Directory</td>
+    <td class="mono">E:/WORK/iBoard/Function/DSO/fpga/</td>
+   </tr>
+   <tr>
+    <td class="label">Files</td>
+    <td class="mono">E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/nios2_iboard.v (261740 bytes VERILOG)
+     <br/>
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0.ocp (864 bytes OTHER)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0.sdc (4510 bytes SDC)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0.v (444776 bytes VERILOG_ENCRYPT)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_bht_ram.mif (2392 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_dc_tag_ram.mif (856 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_ic_tag_ram.mif (1881 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_jtag_debug_module_sysclk.v (7332 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_jtag_debug_module_tck.v (8774 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_jtag_debug_module_wrapper.v (10865 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_mult_cell.v (6380 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_ociram_default_contents.mif (5714 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_oci_test_bench.v (1559 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_rf_ram_a.mif (600 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_rf_ram_b.mif (600 bytes MIF)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_nios2_qsys_0_test_bench.v (32416 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_sdram_0.v (24619 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_sysid.v (1451 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_led.v (2233 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_epcs_flash_controller_0.v (17812 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_epcs_flash_controller_0_boot_rom_synth.hex (5148 bytes HEX)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_master_translator.sv (16802 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_slave_translator.sv (16043 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_slave_agent.sv (19132 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_burst_uncompressor.sv (10373 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_avalon_sc_fifo.v (32228 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_master_agent.sv (8686 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_addr_router.sv (6756 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_addr_router_001.sv (7322 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_id_router.sv (6048 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_id_router_001.sv (6060 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_id_router_003.sv (5979 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_traffic_limiter.sv (12802 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_avalon_st_pipeline_base.v (4716 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_burst_adapter.sv (37064 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_reset_controller.v (3595 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_reset_synchronizer.v (3564 bytes VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_reset_controller.sdc (1179 bytes SDC)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_cmd_xbar_demux.sv (4755 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_cmd_xbar_demux_001.sv (6033 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_arbitrator.sv (9460 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_cmd_xbar_mux.sv (10430 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_rsp_xbar_demux.sv (4114 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_rsp_xbar_demux_003.sv (3490 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_rsp_xbar_mux.sv (12049 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_rsp_xbar_mux_001.sv (13669 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_width_adapter.sv (35859 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/nios2_iboard_irq_mapper.sv (1689 bytes SYSTEM_VERILOG)
+     <br/>
+    </td>
+   </tr>
+   <tr>
+    <td class="label">Instantiations</td>
+    <td class="mono">
+     <table class="grid">
+      <tr>
+       <td><b>nios2_iboard</b>
+        <br/>nios2_iboard v1.0</td>
+       <td><b>nios2_iboard_nios2_qsys_0</b> as nios2_qsys_0
+        <br/><b>nios2_iboard_sdram_0</b> as sdram_0
+        <br/><b>nios2_iboard_sysid</b> as sysid
+        <br/><b>nios2_iboard_led</b> as led
+        <br/><b>nios2_iboard_epcs_flash_controller_0</b> as epcs_flash_controller_0
+        <br/><b>altera_merlin_master_translator</b> as nios2_qsys_0_instruction_master_translator, nios2_qsys_0_data_master_translator
+        <br/><b>altera_merlin_slave_translator</b> as nios2_qsys_0_jtag_debug_module_translator, sdram_0_s1_translator, epcs_flash_controller_0_epcs_control_port_translator, sysid_control_slave_translator, led_s1_translator
+        <br/><b>altera_merlin_slave_agent</b> as sdram_0_s1_translator_avalon_universal_slave_0_agent, sysid_control_slave_translator_avalon_universal_slave_0_agent, epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent, led_s1_translator_avalon_universal_slave_0_agent
+        <br/><b>altera_avalon_sc_fifo</b> as sdram_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, sysid_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent_rsp_fifo, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo, led_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+        <br/><b>altera_merlin_master_agent</b> as nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent, nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent
+        <br/><b>nios2_iboard_addr_router</b> as addr_router
+        <br/><b>nios2_iboard_addr_router_001</b> as addr_router_001
+        <br/><b>nios2_iboard_id_router</b> as id_router, id_router_002
+        <br/><b>nios2_iboard_id_router_001</b> as id_router_001
+        <br/><b>nios2_iboard_id_router_003</b> as id_router_003, id_router_004
+        <br/><b>altera_merlin_traffic_limiter</b> as limiter, limiter_001
+        <br/><b>altera_merlin_burst_adapter</b> as burst_adapter
+        <br/><b>altera_reset_controller</b> as rst_controller
+        <br/><b>nios2_iboard_cmd_xbar_demux</b> as cmd_xbar_demux
+        <br/><b>nios2_iboard_cmd_xbar_demux_001</b> as cmd_xbar_demux_001
+        <br/><b>nios2_iboard_cmd_xbar_mux</b> as cmd_xbar_mux, cmd_xbar_mux_001, cmd_xbar_mux_002
+        <br/><b>nios2_iboard_rsp_xbar_demux</b> as rsp_xbar_demux, rsp_xbar_demux_001, rsp_xbar_demux_002
+        <br/><b>nios2_iboard_rsp_xbar_demux_003</b> as rsp_xbar_demux_003, rsp_xbar_demux_004
+        <br/><b>nios2_iboard_rsp_xbar_mux</b> as rsp_xbar_mux
+        <br/><b>nios2_iboard_rsp_xbar_mux_001</b> as rsp_xbar_mux_001
+        <br/><b>altera_merlin_width_adapter</b> as width_adapter, width_adapter_001
+        <br/><b>nios2_iboard_irq_mapper</b> as irq_mapper
+        <br/>
+       </td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_nios2_qsys_0</b>
+        <br/>altera_nios2_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_sdram_0</b>
+        <br/>altera_avalon_new_sdram_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_sysid</b>
+        <br/>altera_avalon_sysid_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_led</b>
+        <br/>altera_avalon_pio v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_epcs_flash_controller_0</b>
+        <br/>altera_avalon_epcs_flash_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_translator</b>
+        <br/>altera_merlin_master_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_translator</b>
+        <br/>altera_merlin_slave_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_agent</b>
+        <br/>altera_merlin_slave_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_sc_fifo</b>
+        <br/>altera_avalon_sc_fifo v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_agent</b>
+        <br/>altera_merlin_master_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_addr_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_addr_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_id_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_id_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_id_router_003</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_traffic_limiter</b>
+        <br/>altera_merlin_traffic_limiter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_burst_adapter</b>
+        <br/>altera_merlin_burst_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_reset_controller</b>
+        <br/>altera_reset_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_cmd_xbar_demux</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_cmd_xbar_demux_001</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_cmd_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_rsp_xbar_demux</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_rsp_xbar_demux_003</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_rsp_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_rsp_xbar_mux_001</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_width_adapter</b>
+        <br/>altera_merlin_width_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>nios2_iboard_irq_mapper</b>
+        <br/>altera_irq_mapper v11.1</td>
+       <td></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
+  <div style="width:100% ;  height:10px"> </div>
+  <div class="label">Generation Messages</div>
+  <div style="white-space:pre ; font-family:courier">2012.03.28.02:40:49 [Debug] nios2_iboard.altera_nios2_qsys: When a generate simulation callback is defined a synthesis generation callback should also be defined
+2012.03.28.02:42:40 [Debug] nios2_iboard.nios2_qsys_0: Timing: VAL:1/0.060s ELA:1/0.015s
+2012.03.28.02:42:40 [Info] nios2_iboard.sysid: System ID will no longer be automatically assigned.
+2012.03.28.02:42:40 [Info] nios2_iboard.sysid: Time stamp will be automatically updated when this component is generated.
+2012.03.28.02:42:40 [Debug] nios2_iboard.sysid: Timing: VAL:2/0.000s/0.001s
+2012.03.28.02:42:40 [Warning] nios2_iboard.epcs_flash_controller_0: Interrupt sender <b>epcs_flash_controller_0.irq</b> is not connected to an interrupt receiver
+2012.03.28.02:42:40 [Info] nios2_iboard: Generating <b>nios2_iboard</b> "<b>nios2_iboard</b>" for QUARTUS_SYNTH
+2012.03.28.02:42:40 [Debug] nios2_iboard: queue size: 0 starting:nios2_iboard "nios2_iboard"
+2012.03.28.02:42:40 [Debug] Transform: PipelineBridgeSwap
+2012.03.28.02:42:40 [Info] pipeline_bridge_swap_transform: After transform: <b>6</b> modules, <b>23</b> connections
+2012.03.28.02:42:40 [Debug] Transform: ClockCrossingBridgeSwap
+2012.03.28.02:42:40 [Debug] Transform: QsysBetaIPSwap
+2012.03.28.02:42:40 [Debug] Transform: CustomInstructionTransform
+2012.03.28.02:42:40 [Info] No custom instruction connections, skipping transform 
+2012.03.28.02:42:40 [Debug] Transform: TristateConduitUpgradeTransform
+2012.03.28.02:42:41 [Debug] Transform: TranslatorTransform
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Info] merlin_translator_transform: After transform: <b>13</b> modules, <b>51</b> connections
+2012.03.28.02:42:41 [Debug] Transform: DomainTransform
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.instruction_master and nios2_qsys_0_instruction_master_translator.avalon_anti_master_0
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.data_master and nios2_qsys_0_data_master_translator.avalon_anti_master_0
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0_jtag_debug_module_translator.avalon_anti_slave_0 and nios2_qsys_0.jtag_debug_module
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sdram_0_s1_translator.avalon_anti_slave_0 and sdram_0.s1
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces epcs_flash_controller_0_epcs_control_port_translator.avalon_anti_slave_0 and epcs_flash_controller_0.epcs_control_port
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sysid_control_slave_translator.avalon_anti_slave_0 and sysid.control_slave
+2012.03.28.02:42:41 [Debug] Transform merlin_domain_transform not run on matched interfaces led_s1_translator.avalon_anti_slave_0 and led.s1
+2012.03.28.02:42:41 [Info] merlin_domain_transform: After transform: <b>26</b> modules, <b>136</b> connections
+2012.03.28.02:42:41 [Debug] Transform: RouterTransform
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:41 [Progress] min: 0
+2012.03.28.02:42:41 [Progress] max: 1
+2012.03.28.02:42:41 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_router_transform: After transform: <b>33</b> modules, <b>164</b> connections
+2012.03.28.02:42:42 [Debug] Transform: TrafficLimiterTransform
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_traffic_limiter_transform: After transform: <b>35</b> modules, <b>174</b> connections
+2012.03.28.02:42:42 [Debug] Transform: BurstTransform
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_burst_transform: After transform: <b>36</b> modules, <b>178</b> connections
+2012.03.28.02:42:42 [Debug] Transform: ResetAdaptation
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] reset_adaptation_transform: After transform: <b>37</b> modules, <b>140</b> connections
+2012.03.28.02:42:42 [Debug] Transform: NetworkToSwitchTransform
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_network_to_switch_transform: After transform: <b>50</b> modules, <b>170</b> connections
+2012.03.28.02:42:42 [Debug] Transform: WidthTransform
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_width_transform: After transform: <b>52</b> modules, <b>176</b> connections
+2012.03.28.02:42:42 [Debug] Transform: RouterTableTransform
+2012.03.28.02:42:42 [Debug] Transform: ClockCrossingTransform
+2012.03.28.02:42:42 [Debug] Transform: PipelineTransform
+2012.03.28.02:42:42 [Debug] Transform: TrafficLimiterUpdateTransform
+2012.03.28.02:42:42 [Info] limiter_update_transform: After transform: <b>52</b> modules, <b>178</b> connections
+2012.03.28.02:42:42 [Debug] Transform: InterruptMapperTransform
+2012.03.28.02:42:42 [Progress] min: 0
+2012.03.28.02:42:42 [Progress] max: 1
+2012.03.28.02:42:42 [Progress] current: 1
+2012.03.28.02:42:42 [Info] merlin_interrupt_mapper_transform: After transform: <b>53</b> modules, <b>181</b> connections
+2012.03.28.02:42:42 [Debug] Transform: InterruptSyncTransform
+2012.03.28.02:42:42 [Debug] Transform: InterruptFanoutTransform
+2012.03.28.02:42:43 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:endofpacket (endofpacket)"
+2012.03.28.02:42:43 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:dataavailable (dataavailable)"
+2012.03.28.02:42:43 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:readyfordata (readyfordata)"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_nios2_qsys</b> "<b>submodules/nios2_iboard_nios2_qsys_0</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_new_sdram_controller</b> "<b>submodules/nios2_iboard_sdram_0</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sysid_qsys</b> "<b>submodules/nios2_iboard_sysid</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_pio</b> "<b>submodules/nios2_iboard_led</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_epcs_flash_controller</b> "<b>submodules/nios2_iboard_epcs_flash_controller_0</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_addr_router</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_addr_router_001</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_id_router</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_id_router_001</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_id_router</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_id_router_003</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_router</b> "<b>submodules/nios2_iboard_id_router_003</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_burst_adapter</b> "<b>submodules/altera_merlin_burst_adapter</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_cmd_xbar_demux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_cmd_xbar_demux_001</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/nios2_iboard_cmd_xbar_mux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/nios2_iboard_cmd_xbar_mux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/nios2_iboard_cmd_xbar_mux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_demux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_demux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_demux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_demux_003</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_demux_003</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_mux</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/nios2_iboard_rsp_xbar_mux_001</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2012.03.28.02:42:43 [Debug] nios2_iboard: "<b>nios2_iboard</b>" reuses <b>altera_irq_mapper</b> "<b>submodules/nios2_iboard_irq_mapper</b>"
+2012.03.28.02:42:44 [Debug] nios2_iboard: queue size: 49 starting:altera_nios2_qsys "submodules/nios2_iboard_nios2_qsys_0"
+2012.03.28.02:42:44 [Info] nios2_qsys_0: Starting RTL generation for module 'nios2_iboard_nios2_qsys_0'
+2012.03.28.02:42:44 [Info] nios2_qsys_0:   Generation command is [exec C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/11.1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/11.1/quartus/sopc_builder/bin/europa -I C:/altera/11.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/11.1/quartus/sopc_builder/bin -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios2_iboard_nios2_qsys_0 --dir=C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0001_nios2_qsys_0_gen/ --quartus_dir=C:/altera/11.1/quartus --verilog --config=C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0001_nios2_qsys_0_gen//nios2_iboard_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:44 (*) Starting Nios II generation
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:44 (*)   Checking for encrypted license (non-evaluation).
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:45 (*)   Encrypted license found.  SOF will not be time-limited.
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:45 (*)   Elaborating CPU configuration settings
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:45 (*)   Creating all objects for CPU
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:45 (*)     Testbench
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:46 (*)     Instruction decoding
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:46 (*)       Instruction fields
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:46 (*)       Instruction decodes
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:47 (*)       Signals for RTL simulation waveforms
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:47 (*)       Instruction controls
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:47 (*)     Pipeline frontend
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:47 (*)     Pipeline backend
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:52 (*)   Generating RTL from CPU objects
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:55 (*)   Creating encrypted RTL
+2012.03.28.02:42:57 [Info] nios2_qsys_0: # 2012.03.28 02:42:57 (*) Done Nios II generation
+2012.03.28.02:42:57 [Info] nios2_qsys_0: Done RTL generation for module 'nios2_iboard_nios2_qsys_0'
+2012.03.28.02:42:57 [Info] nios2_qsys_0: "<b>nios2_iboard</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"
+2012.03.28.02:42:57 [Debug] nios2_iboard: queue size: 48 starting:altera_avalon_new_sdram_controller "submodules/nios2_iboard_sdram_0"
+2012.03.28.02:42:58 [Info] Starting classic module elaboration.
+2012.03.28.02:43:00 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0002_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0002_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:04 [Info] Finished elaborating classic module.
+2012.03.28.02:43:04 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0002_sopclgen/yysystem.ptf
+2012.03.28.02:43:04 [Info] Running sopc_builder...
+2012.03.28.02:43:06 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0002_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0002_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:09 [Progress] No .sopc_builder configuration file(!)
+2012.03.28.02:43:10 [Progress] .
+2012.03.28.02:43:11 [Progress] .
+2012.03.28.02:43:11 [Progress] # 2012.03.28 02:43:11 (*) Running Test Generator Program for nios2_iboard_sdram_0
+2012.03.28.02:43:13 [Progress] # 2012.03.28 02:43:12 (*) Success: sopc_builder finished.
+2012.03.28.02:43:13 [Info] sdram_0: "<b>nios2_iboard</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram_0</b>"
+2012.03.28.02:43:13 [Debug] nios2_iboard: queue size: 47 starting:altera_avalon_sysid_qsys "submodules/nios2_iboard_sysid"
+2012.03.28.02:43:13 [Info] sysid: "<b>nios2_iboard</b>" instantiated <b>altera_avalon_sysid_qsys</b> "<b>sysid</b>"
+2012.03.28.02:43:13 [Debug] nios2_iboard: queue size: 46 starting:altera_avalon_pio "submodules/nios2_iboard_led"
+2012.03.28.02:43:13 [Info] Starting classic module elaboration.
+2012.03.28.02:43:15 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0004_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:19 [Info] Finished elaborating classic module.
+2012.03.28.02:43:19 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0004_sopclgen/yysystem.ptf
+2012.03.28.02:43:19 [Info] Running sopc_builder...
+2012.03.28.02:43:21 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0004_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:25 [Progress] No .sopc_builder configuration file(!)
+2012.03.28.02:43:25 [Progress] .
+2012.03.28.02:43:26 [Progress] # 2012.03.28 02:43:26 (*) Success: sopc_builder finished.
+2012.03.28.02:43:27 [Info] led: "<b>nios2_iboard</b>" instantiated <b>altera_avalon_pio</b> "<b>led</b>"
+2012.03.28.02:43:27 [Debug] nios2_iboard: queue size: 45 starting:altera_avalon_epcs_flash_controller "submodules/nios2_iboard_epcs_flash_controller_0"
+2012.03.28.02:43:27 [Info] Starting classic module elaboration.
+2012.03.28.02:43:29 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0005_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:33 [Info] Finished elaborating classic module.
+2012.03.28.02:43:33 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0005_sopclgen/yysystem.ptf
+2012.03.28.02:43:33 [Info] Running sopc_builder...
+2012.03.28.02:43:35 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0005_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5426_3932251257575651437.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.03.28.02:43:39 [Progress] No .sopc_builder configuration file(!)
+2012.03.28.02:43:39 [Progress] .
+2012.03.28.02:43:41 [Progress] # 2012.03.28 02:43:41 (*) Success: sopc_builder finished.
+2012.03.28.02:43:41 [Info] epcs_flash_controller_0: "<b>nios2_iboard</b>" instantiated <b>altera_avalon_epcs_flash_controller</b> "<b>epcs_flash_controller_0</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 44 starting:altera_merlin_master_translator "submodules/altera_merlin_master_translator"
+2012.03.28.02:43:42 [Info] nios2_qsys_0_instruction_master_translator: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_master_translator</b> "<b>nios2_qsys_0_instruction_master_translator</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 42 starting:altera_merlin_slave_translator "submodules/altera_merlin_slave_translator"
+2012.03.28.02:43:42 [Info] nios2_qsys_0_jtag_debug_module_translator: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>nios2_qsys_0_jtag_debug_module_translator</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 37 starting:altera_merlin_slave_agent "submodules/altera_merlin_slave_agent"
+2012.03.28.02:43:42 [Info] sdram_0_s1_translator_avalon_universal_slave_0_agent: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>sdram_0_s1_translator_avalon_universal_slave_0_agent</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 36 starting:altera_avalon_sc_fifo "submodules/altera_avalon_sc_fifo"
+2012.03.28.02:43:42 [Info] sdram_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "<b>nios2_iboard</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>sdram_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 35 starting:altera_merlin_master_agent "submodules/altera_merlin_master_agent"
+2012.03.28.02:43:42 [Info] nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_master_agent</b> "<b>nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 25 starting:altera_merlin_router "submodules/nios2_iboard_addr_router"
+2012.03.28.02:43:42 [Info] addr_router: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 24 starting:altera_merlin_router "submodules/nios2_iboard_addr_router_001"
+2012.03.28.02:43:42 [Info] addr_router_001: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_001</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 23 starting:altera_merlin_router "submodules/nios2_iboard_id_router"
+2012.03.28.02:43:42 [Info] id_router: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_router</b> "<b>id_router</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 22 starting:altera_merlin_router "submodules/nios2_iboard_id_router_001"
+2012.03.28.02:43:42 [Info] id_router_001: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_001</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 20 starting:altera_merlin_router "submodules/nios2_iboard_id_router_003"
+2012.03.28.02:43:42 [Info] id_router_003: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_003</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 18 starting:altera_merlin_traffic_limiter "submodules/altera_merlin_traffic_limiter"
+2012.03.28.02:43:42 [Info] limiter: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_traffic_limiter</b> "<b>limiter</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 16 starting:altera_merlin_burst_adapter "submodules/altera_merlin_burst_adapter"
+2012.03.28.02:43:42 [Info] burst_adapter: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_burst_adapter</b> "<b>burst_adapter</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 15 starting:altera_reset_controller "submodules/altera_reset_controller"
+2012.03.28.02:43:42 [Info] rst_controller: "<b>nios2_iboard</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 14 starting:altera_merlin_demultiplexer "submodules/nios2_iboard_cmd_xbar_demux"
+2012.03.28.02:43:42 [Info] cmd_xbar_demux: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 13 starting:altera_merlin_demultiplexer "submodules/nios2_iboard_cmd_xbar_demux_001"
+2012.03.28.02:43:42 [Info] cmd_xbar_demux_001: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_001</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 12 starting:altera_merlin_multiplexer "submodules/nios2_iboard_cmd_xbar_mux"
+2012.03.28.02:43:42 [Info] cmd_xbar_mux: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 9 starting:altera_merlin_demultiplexer "submodules/nios2_iboard_rsp_xbar_demux"
+2012.03.28.02:43:42 [Info] rsp_xbar_demux: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 6 starting:altera_merlin_demultiplexer "submodules/nios2_iboard_rsp_xbar_demux_003"
+2012.03.28.02:43:42 [Info] rsp_xbar_demux_003: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux_003</b>"
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 4 starting:altera_merlin_multiplexer "submodules/nios2_iboard_rsp_xbar_mux"
+2012.03.28.02:43:42 [Info] rsp_xbar_mux: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux</b>"
+2012.03.28.02:43:42 [Info] Reusing file <b>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 3 starting:altera_merlin_multiplexer "submodules/nios2_iboard_rsp_xbar_mux_001"
+2012.03.28.02:43:42 [Info] rsp_xbar_mux_001: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux_001</b>"
+2012.03.28.02:43:42 [Info] Reusing file <b>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 2 starting:altera_merlin_width_adapter "submodules/altera_merlin_width_adapter"
+2012.03.28.02:43:42 [Info] width_adapter: "<b>nios2_iboard</b>" instantiated <b>altera_merlin_width_adapter</b> "<b>width_adapter</b>"
+2012.03.28.02:43:42 [Info] Reusing file <b>E:/WORK/iBoard/Function/DSO/fpga/nios2_iboard/synthesis/submodules/altera_merlin_burst_uncompressor.sv</b>
+2012.03.28.02:43:42 [Debug] nios2_iboard: queue size: 0 starting:altera_irq_mapper "submodules/nios2_iboard_irq_mapper"
+2012.03.28.02:43:42 [Info] irq_mapper: "<b>nios2_iboard</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2012.03.28.02:43:42 [Info] nios2_iboard: Done <b>nios2_iboard</b>" with 28 modules, 79 files, 1606286 bytes
+</div>
+  <div style="width:100% ; background:#eee ; height:10px"> </div>
+ </body>
+</html>

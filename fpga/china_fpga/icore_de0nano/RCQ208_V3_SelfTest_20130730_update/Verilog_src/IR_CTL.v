@@ -1,0 +1,306 @@
+
+`define UD #1
+
+
+//Timing control.
+`define HEAD_HLT 	10'h1B	//12'h6F 
+`define HEAD_LLT	10'hD	//12'h37 
+`define BITH_HLT	10'h1	//12'h7   
+`define BITH_LLT	10'h1	//12'h7
+`define BITH_LLT2	10'h2	//12'h7   
+`define BITL_HLT	10'h1	//12'h7   
+`define BITL_LLT	10'h5	//12'h14 
+`define BITL_LLT2	10'h4	//12'h14                                        
+`define REP_HEAD_HLT	10'h1B	//12'h6F 
+`define REP_HEAD_LLT	10'h7	//12'h1C 
+`define REP_BIT_HLT	10'h1	//12'h7   
+`define REP_BIT_LLT	10'h37	//12'hF4  
+
+
+module IR_CTL
+	(
+	//Input ports.
+	SYSCLK,
+	RST_B,
+	IR_IO,
+	
+	//Output ports.
+	IR_DATA,
+	IR_EN
+	);
+	
+//===========================================================================
+//Input and output declaration.
+//===========================================================================
+
+input		SYSCLK;
+input		RST_B;
+input		IR_IO;
+
+output	[31:0]	IR_DATA;
+output		IR_EN;
+
+//===========================================================================
+//Wire and reg declaration.
+//===========================================================================
+
+wire		SYSCLK;
+wire		RST_B;
+wire		IR_IO;
+
+reg	[31:0]	IR_DATA;
+wire		IR_EN;
+
+//===========================================================================
+//Wire and reg in the module.
+//===========================================================================
+
+parameter	IR_IDLE     = 4'h0;
+parameter	IR_REC_DATA = 4'h1;
+parameter	IR_DATA_END = 4'h2;
+parameter	IR_REP_BIT  = 4'h3;
+parameter	IR_REP_END  = 4'h4;
+
+reg	[3:0]	IR_CS;
+reg	[3:0]	IR_NS;
+
+reg	[23:0]	TIME_CNT;
+reg	[23:0]	TIME_CNT_N;
+
+reg	[23:0]	LOW_TIME;
+reg	[23:0]	LOW_TIME_N;
+
+reg	[23:0]	HIGH_TIME;
+reg	[23:0]	HIGH_TIME_N;    
+
+reg	[7:0]	BIT_CNT;
+reg	[7:0]	BIT_CNT_N;
+
+reg	[1:0]	IR_IO_REG;
+wire	[1:0]	IR_IO_REG_N;
+
+reg	[31:0]	IR_DATA_N;
+	
+reg		REC_DATA;
+reg		REC_DATA_N;
+
+reg	[31:0]	IR_DATA_REG;
+reg	[31:0]	IR_DATA_REG_N;
+
+wire		REC_HEAD;
+wire		REC_BIT_0;
+wire		REC_BIT_1;
+wire		REC_REP_HEAD;
+wire		REC_REP_BIT; 
+
+//===========================================================================
+//Logic.
+//===========================================================================
+
+//---------------------------------------------------------------------------
+//Some control single.
+//---------------------------------------------------------------------------
+
+//Check the single had recivered.
+assign REC_HEAD     = (HIGH_TIME[23:14] == `HEAD_HLT)     && (LOW_TIME[23:14] == `HEAD_LLT) && REC_DATA;
+assign REC_BIT_0    = (HIGH_TIME[23:14] == `BITL_HLT)     && ((LOW_TIME[23:14] == `BITL_LLT)||(LOW_TIME[23:14] == `BITL_LLT2)) && REC_DATA;
+assign REC_BIT_1    = (HIGH_TIME[23:14] == `BITH_HLT)     && ((LOW_TIME[23:14] == `BITH_LLT)||(LOW_TIME[23:14] == `BITH_LLT2))&& REC_DATA;
+assign REC_REP_HEAD = (HIGH_TIME[23:14] == `REP_HEAD_HLT) && (LOW_TIME[23:14] == `REP_HEAD_LLT) && REC_DATA;
+assign REC_REP_BIT  = (HIGH_TIME[23:14] == `REP_BIT_HLT)  && (LOW_TIME[23:14] == `REP_BIT_LLT) && REC_DATA; 
+
+//REC_DATA, creat a single plus when posedge of IR_IO.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    REC_DATA	<= `UD 1'h0;
+  else
+    REC_DATA	<= `UD REC_DATA_N;
+end
+
+always @ (*)
+begin
+  if(IR_IO_REG == 2'b01)
+    REC_DATA_N	 = 1'h1;
+  else
+    REC_DATA_N	 = 1'h0;
+end
+
+//Save the IR IO 2 clock for check the posedge and negedge of it. 
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    IR_IO_REG	<= `UD 2'h0;
+  else
+    IR_IO_REG	<= `UD IR_IO_REG_N;
+end
+
+assign IR_IO_REG_N = {IR_IO_REG[0] , {~IR_IO}};
+
+//TIME_CNT, count the every high plus and low plus time.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    TIME_CNT	<= `UD 24'h0;
+  else
+    TIME_CNT	<= `UD TIME_CNT_N;
+end
+
+always @ (*)
+begin
+  if(IR_IO_REG[0] != IR_IO_REG[1])
+    TIME_CNT_N	 = 24'h0;
+  else
+    TIME_CNT_N	 = TIME_CNT + 24'h1;
+end
+
+//HIGH_TIME, save the every high level plus time.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    HIGH_TIME	<= `UD 24'h0;
+  else
+    HIGH_TIME	<= `UD HIGH_TIME_N;
+end
+
+always @ (*)
+begin
+  if(IR_IO_REG == 2'b10)
+    HIGH_TIME_N	 = TIME_CNT;
+  else
+    HIGH_TIME_N	 = HIGH_TIME;
+end
+
+//LOW_TIME, save the every low level plus time.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    LOW_TIME	<= `UD 24'h0;
+  else
+    LOW_TIME	<= `UD LOW_TIME_N;
+end
+
+always @ (*)
+begin
+/*
+  if(IR_IO_REG == 2'b01)
+    LOW_TIME_N	 = TIME_CNT;
+  else
+    LOW_TIME_N	 = LOW_TIME;
+*/
+  if(IR_IO)
+    LOW_TIME_N	 = TIME_CNT;
+  else
+    LOW_TIME_N	 = LOW_TIME;
+end
+
+//BIT_CNT, count the bit number had recived of every byte.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    BIT_CNT	<= `UD 8'h0;
+  else
+    BIT_CNT	<= `UD BIT_CNT_N;
+end
+
+always @ (*)
+begin
+  if(IR_CS != IR_REC_DATA)
+    BIT_CNT_N	 = 8'h0;
+  else if((IR_CS == IR_REC_DATA) && (IR_IO_REG == 2'b01))
+    BIT_CNT_N	 = BIT_CNT + 8'h1;
+  else
+    BIT_CNT_N	 = BIT_CNT;
+end
+
+//----------------------------------------------------------------------------
+//IR State machine.
+//----------------------------------------------------------------------------
+
+//FSM of IR.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    IR_CS	<= `UD IR_IDLE;
+  else
+    IR_CS	<= `UD IR_NS;
+end
+
+always @ (*)
+begin
+  case(IR_CS)
+    IR_IDLE      : if(REC_HEAD)
+    		     IR_NS = IR_REC_DATA;
+    		   else if(REC_REP_HEAD)
+    		     IR_NS = IR_REP_BIT;
+    		   else 
+    		     IR_NS = IR_CS;
+    		
+    IR_REC_DATA  : if(BIT_CNT == 8'h20)
+    		     IR_NS = IR_DATA_END;
+    		   else if(REC_REP_HEAD || REC_HEAD || REC_REP_BIT)
+    		     IR_NS = IR_IDLE;
+    		   else 
+    		     IR_NS = IR_CS;
+    		 
+    IR_DATA_END  :   IR_NS = IR_IDLE;
+    
+    IR_REP_BIT  : if(REC_REP_BIT)
+    		     IR_NS = IR_REP_END;
+    		   else if(REC_REP_HEAD || REC_HEAD || REC_BIT_0 || REC_BIT_1)
+    		     IR_NS = IR_IDLE;
+    		   else 
+    		     IR_NS = IR_CS;  
+    	
+    IR_REP_END   :   IR_NS = IR_IDLE;
+    default	 :   IR_NS = IR_IDLE; 
+  endcase
+end
+
+//===========================================================================
+//Output control.
+//===========================================================================
+
+//IR_DATAR_REG , Save the data had receverd.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    IR_DATA_REG	<= `UD 32'h0;
+  else
+    IR_DATA_REG	<= `UD IR_DATA_REG_N;
+end
+
+always @ (*)
+begin
+  if(IR_CS == IR_IDLE)
+    IR_DATA_REG_N = 32'hFFFF;
+  else if((IR_CS == IR_REC_DATA) && ((LOW_TIME[23:14] > 10'h2 )&& (IR_IO_REG == 2'b01)))
+    IR_DATA_REG_N	 = {IR_DATA_REG[30:0] , 1'h0};
+  else if(((IR_CS == IR_REC_DATA)||(IR_CS == IR_IDLE)) && (IR_IO_REG == 2'b01))
+    IR_DATA_REG_N	 = {IR_DATA_REG[30:0] , 1'h1};
+  else
+    IR_DATA_REG_N	 = IR_DATA_REG;
+end
+
+//IR_DATA, output.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    IR_DATA	<= `UD 32'h0;
+  else
+    IR_DATA	<= `UD IR_DATA_N;
+end
+
+always @ (*)
+begin
+  if(IR_NS == IR_DATA_END)
+    IR_DATA_N = IR_DATA_REG;
+  else
+    IR_DATA_N = IR_DATA;
+end
+
+//IR_EN, active when every enable data.
+assign IR_EN = (IR_CS == IR_DATA_END) || (IR_CS == IR_REP_END);
+
+endmodule
+
+ 

@@ -1,0 +1,8 @@
+"STARTUP.obj",
+"main.obj",
+"ds1302.obj",
+"i2c.obj",
+"key.obj",
+"lm75.obj" 
+TO "infi_8051" 
+RAMSIZE(256) 

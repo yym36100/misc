@@ -1,0 +1,250 @@
+
+`define UD #1
+
+
+module	USER_KEY_CTL
+	(
+	//Input ports.
+	SYSCLK,
+	SYSCLK_40MHZ,
+	RST_B,
+
+	//Key ports.
+	KEY,
+
+	//Data output.
+	LED_DATA,
+	BUZZER,
+	DAC_CS,
+	DAC_CLK,
+	DAC_DATA,
+	BUZZER_OUT,
+
+	KEY_FOCUS
+	);	
+
+//===========================================================================
+//Input and output declaration.
+//===========================================================================
+
+input		SYSCLK;
+input		SYSCLK_40MHZ;
+input		RST_B;
+
+input	[6:0]	KEY;
+
+output	[5:0]	LED_DATA;
+output		BUZZER;	
+output		DAC_CS;	
+output		DAC_CLK;	
+output	[7:0]	DAC_DATA;
+output		BUZZER_OUT;
+
+output	[3:0]	KEY_FOCUS;
+
+//===========================================================================
+//Wire and reg declaration.
+//===========================================================================
+
+wire		SYSCLK;
+wire		SYSCLK_40MHZ;
+wire		RST_B;
+
+wire	[6:0]	KEY;
+
+reg	[5:0]	LED_DATA;
+reg		BUZZER;	
+wire		DAC_CS;	
+wire		DAC_CLK;	
+reg	[7:0]	DAC_DATA;
+wire		BUZZER_OUT;
+
+reg	[3:0]	KEY_FOCUS;
+
+//===========================================================================
+//Wire and reg in the module.
+//===========================================================================
+
+//Used for key debouce.
+reg	[19:0]	TIME_CNT;
+wire	[19:0]	TIME_CNT_N;
+reg	[6:0]	KEY_SAMPLE;
+reg	[6:0]	KEY_SAMPLE_N;
+reg	[6:0]	KEY_REG;
+
+wire		KEY_UP;
+wire		KEY_DOWN;
+wire		KEY_LEFT;
+wire		KEY_RIGHT;
+wire		KEY_OK;
+wire		KEY_EXIT;
+wire		KEY_MENU;
+
+//Used for Triggle value show.
+reg	[5:0]	LED_DATA_N;
+reg		BUZZER_N;	
+reg	[7:0]	DAC_DATA_N;
+reg	[3:0]	KEY_FOCUS_N;
+
+//===========================================================================
+//instance.
+//===========================================================================
+
+//Buzzer control.
+BUZZER_CTL I_BUZZER_CTL
+	(
+	.SYSCLK		(SYSCLK),
+	.RST_B		(RST_B),
+	.BUZZER_EN	(BUZZER),
+	.BUZZER		(BUZZER_OUT)
+	);
+//---------------------------------------------------------------------------
+//Key debouncing circuit.
+//---------------------------------------------------------------------------
+
+//Some output single.
+assign	DAC_CS  = 1'h0;
+assign	DAC_CLK = SYSCLK;
+
+//Some control single.
+always @ (posedge SYSCLK) KEY_REG <= `UD KEY_SAMPLE;
+
+assign	KEY_UP	  = (KEY_REG[0]) && (!KEY_SAMPLE[0]);
+assign	KEY_DOWN  = (KEY_REG[1]) && (!KEY_SAMPLE[1]);
+assign	KEY_LEFT  = (KEY_REG[2]) && (!KEY_SAMPLE[2]);
+assign	KEY_RIGHT = (KEY_REG[3]) && (!KEY_SAMPLE[3]);
+assign	KEY_OK	  = (KEY_REG[4]) && (!KEY_SAMPLE[4]);
+assign	KEY_EXIT  = (KEY_REG[5]) && (!KEY_SAMPLE[5]);
+assign	KEY_MENU  = (KEY_REG[6]) && (!KEY_SAMPLE[6]);
+
+//Count the time the key is pressed.
+always @ (posedge SYSCLK  or negedge RST_B)
+begin
+  if(!RST_B)
+    TIME_CNT  <= `UD 20'h0;
+  else 
+    TIME_CNT  <= `UD TIME_CNT_N;
+end
+
+assign	TIME_CNT_N = TIME_CNT +1'h1;
+
+//Save the key value when some key is press.
+always @ (posedge SYSCLK  or negedge RST_B)
+begin
+  if(!RST_B)
+    KEY_SAMPLE   <= `UD 7'h3F;
+  else 
+    KEY_SAMPLE   <= `UD KEY_SAMPLE_N;
+end
+
+always @ (*)
+begin
+  if(TIME_CNT == 20'h0)
+    KEY_SAMPLE_N  = KEY;
+  else
+    KEY_SAMPLE_N  = KEY_SAMPLE;
+end
+
+//---------------------------------------------------------------------------
+//Value inside control.
+//---------------------------------------------------------------------------
+
+//Focus, the user move the focus item count.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    KEY_FOCUS	<= `UD 4'h0;
+  else
+    KEY_FOCUS	<= `UD KEY_FOCUS_N;
+end
+
+always @ (*)
+begin
+  if((KEY_LEFT) && (KEY_FOCUS == 4'h0))
+    KEY_FOCUS_N	 = 4'h7;
+  else if((KEY_RIGHT) && (KEY_FOCUS == 4'h7))
+    KEY_FOCUS_N  = 4'h0;
+  else if(KEY_LEFT)
+    KEY_FOCUS_N  = KEY_FOCUS - 4'h1;
+  else if(KEY_RIGHT)
+    KEY_FOCUS_N  = KEY_FOCUS + 4'h1; 
+  else
+    KEY_FOCUS_N  = KEY_FOCUS;
+end	  
+
+//LED_DATA, led on/off control.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    LED_DATA	<= `UD 6'h3F;
+  else
+    LED_DATA	<= `UD LED_DATA_N;
+end
+
+always @ (*)
+begin
+  if((KEY_FOCUS == 4'h2) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {~LED_DATA[5] , LED_DATA[4:0]};
+  else if((KEY_FOCUS == 4'h3) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {LED_DATA[5] , ~LED_DATA[4] , LED_DATA[3:0]};
+  else if((KEY_FOCUS == 4'h4) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {LED_DATA[5:4] , ~LED_DATA[3] , LED_DATA[2:0]};
+  else if((KEY_FOCUS == 4'h5) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {LED_DATA[5:3] , ~LED_DATA[2] , LED_DATA[1:0]};
+  else if((KEY_FOCUS == 4'h6) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {LED_DATA[5:2] , ~LED_DATA[1] , LED_DATA[0]};
+  else if((KEY_FOCUS == 4'h7) && (KEY_UP || KEY_DOWN))
+    LED_DATA_N	 = {LED_DATA[5:1] , ~LED_DATA[0]};
+  else 
+    LED_DATA_N	 = LED_DATA;
+end	
+
+//Buzzer on/off control.
+always @ (posedge SYSCLK_40MHZ or negedge RST_B)
+begin
+  if(!RST_B)
+    BUZZER	<= `UD 1'h0;
+  else
+    BUZZER	<= `UD BUZZER_N;
+end
+
+always @ (*)
+begin
+  if((KEY_FOCUS == 4'h1) && (KEY_UP || KEY_DOWN || KEY_MENU || KEY_EXIT || KEY_OK))
+    BUZZER_N	 = ~ BUZZER;
+  else
+    BUZZER_N	 = BUZZER ;
+end
+
+//DATA_SDIV, the sdiv select control.
+always @ (posedge SYSCLK or negedge RST_B)
+begin
+  if(!RST_B)
+    DAC_DATA	<= `UD 8'h0;
+  else
+    DAC_DATA	<= `UD DAC_DATA_N;
+end
+
+always @ (*)
+begin
+  if(KEY_FOCUS != 4'h0)
+    DAC_DATA_N	 = DAC_DATA;
+  else if((KEY_UP) && (DAC_DATA == 8'hF0))
+    DAC_DATA_N   = DAC_DATA;
+  else if((KEY_DOWN) && (DAC_DATA == 8'h0))
+    DAC_DATA_N   = 8'h0;
+  else if(KEY_UP)
+    DAC_DATA_N   = DAC_DATA + 8'h10;
+  else if(KEY_DOWN)
+    DAC_DATA_N   = DAC_DATA - 8'h10;
+  else
+    DAC_DATA_N   = DAC_DATA ;
+end
+
+endmodule
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+---- CMD_GET_IC_VER Matches (4 in 3 files) ----
+Ch376inc.h (v3_selftest_ucos\src\usb):#define	CMD_GET_IC_VER		CMD01_GET_IC_VER
+Ch376inc.inc (v3_selftest_ucos\src\usb):CMD_GET_IC_VER		EQU		CMD01_GET_IC_VER
+Spi_sw.c (v3_selftest_ucos\src\usb):		xWriteCH376Cmd(CMD_GET_IC_VER);
+Spi_sw.c (v3_selftest_ucos\src\usb):		printf("CMD_GET_IC_VER = %02x\r\n",res);

@@ -1,0 +1,53 @@
+# clk_0
+# cpu_0
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
+# epcs_flash_controller_0
+# sdram_0
+# uart_0
+# LCD_DATA
+# LCD_CS
+# LCD_RS
+# LCD_RD
+# LCD_RST
+# LCD_WR
+# TEMP_DATA
+# PS2_DATA_REC
+# UART_RX_DATA
+# RTC_DATA
+# IR_DATA
+# KEY_FOCUS
+# LED_DATA
+# BUZZER_DATA
+# DAC_DATA
+# ADC_DATA
+# SD_CS
+# SD_DI
+# SD_CLK
+# SD_DO
+# USB_SCS_O
+# USB_SDO_I
+# USB_SDI_O
+# USB_SCK_O
+# USB_INT_I
+# USB_RST_O
+# USB_PC_I
+# ETH_RESET_O
+# ETH_SCK_O
+# ETH_SI_O
+# ETH_SO_I
+# ETH_CLKOUT_I
+# ETH_INT_I
+# ETH_CS_O
+# ETH_WOL_I
+# timer_0
+# SCL
+# SDA
+# TUBE_EN
+# sysid_0
+# timer_1
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "00000000000000E0000001402EFB4CBB"
+set_global_assignment -entity "RC_2C8V3_Nios_CPU" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "RC_2C8V3_Nios_CPU" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "RC_2C8V3_Nios_CPU" -name IP_TOOL_ENV "sopc"
