@@ -1,0 +1,149 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "chinasound"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:21:58 OCTOBER 27,2015"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+#============================================================
+# KEY
+#============================================================
+set_location_assignment PIN_J15 -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_location_assignment PIN_E1 -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_location_assignment PIN_D1 -to LED[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+set_location_assignment PIN_F3 -to LED[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+set_location_assignment PIN_B1 -to LED[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+set_location_assignment PIN_L3 -to LED[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+
+#============================================================
+# GPIO_0, GPIO_0 connect to GPIO Default
+#============================================================
+set_location_assignment PIN_A8 -to top_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top_IN[0]
+set_location_assignment PIN_D3 -to top[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[0]
+set_location_assignment PIN_B8 -to top_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top_IN[1]
+set_location_assignment PIN_C3 -to top[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[1]
+set_location_assignment PIN_A2 -to top[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[2]
+set_location_assignment PIN_A3 -to top[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[3]
+set_location_assignment PIN_B3 -to top[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[4]
+set_location_assignment PIN_B4 -to top[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[5]
+set_location_assignment PIN_A4 -to top[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[6]
+set_location_assignment PIN_B5 -to top[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[7]
+set_location_assignment PIN_A5 -to top[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[8]
+set_location_assignment PIN_D5 -to top[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[9]
+set_location_assignment PIN_B6 -to top[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[10]
+set_location_assignment PIN_A6 -to top[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[11]
+set_location_assignment PIN_B7 -to top[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[12]
+set_location_assignment PIN_D6 -to top[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[13]
+set_location_assignment PIN_A7 -to top[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[14]
+set_location_assignment PIN_C6 -to top[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[15]
+set_location_assignment PIN_C8 -to top[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[16]
+set_location_assignment PIN_E6 -to top[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[17]
+set_location_assignment PIN_E7 -to top[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[18]
+set_location_assignment PIN_D8 -to top[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[19]
+set_location_assignment PIN_E8 -to top[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[20]
+set_location_assignment PIN_F8 -to top[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[21]
+set_location_assignment PIN_F9 -to top[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[22]
+set_location_assignment PIN_E9 -to top[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[23]
+set_location_assignment PIN_C9 -to top[24]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[24]
+set_location_assignment PIN_D9 -to top[25]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[25]
+set_location_assignment PIN_E11 -to top[26]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[26]
+set_location_assignment PIN_E10 -to top[27]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[27]
+set_location_assignment PIN_C11 -to top[28]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[28]
+set_location_assignment PIN_B11 -to top[29]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[29]
+set_location_assignment PIN_A12 -to top[30]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[30]
+set_location_assignment PIN_D11 -to top[31]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[31]
+set_location_assignment PIN_D12 -to top[32]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[32]
+set_location_assignment PIN_B12 -to top[33]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to top[33]
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SIGNALTAP_FILE ../hw/stp1.stp
+set_global_assignment -name VERILOG_FILE ../hw/sample_rom.v
+set_global_assignment -name QIP_FILE ../hw/sample_rom.qip
+set_global_assignment -name MIF_FILE ../hw/sample_data.mif
+set_global_assignment -name VERILOG_FILE ../hw/pt8211_dac.v
+set_global_assignment -name VERILOG_FILE ../hw/mypll.v
+set_global_assignment -name QIP_FILE ../hw/mypll.qip
+set_global_assignment -name SOURCE_FILE ../hw/mypll.ppf
+set_global_assignment -name VERILOG_FILE ../hw/chinasound.v
+set_global_assignment -name VERILOG_FILE multisample_x8.v
+set_global_assignment -name SLD_FILE "E:/fpgaproj/de0_nano/myproj/chinasound/quartus/stp1_auto_stripped.stp"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

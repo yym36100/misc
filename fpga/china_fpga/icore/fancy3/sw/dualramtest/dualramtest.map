@@ -1,0 +1,727 @@
+Archive member included because of file (symbol)
+
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                              obj/default/hello_world_small.o (puts)
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o) (strlen)
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o) (__sfvwrite_small_dev)
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o) (_impure_ptr)
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o) (errno)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world_small.o (alt_ic_isr_register)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o (alt_load)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o (alt_main)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+                              e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o) (write)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o) (alt_sys_init)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o) (altera_avalon_jtag_uart_write)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00008000         0x00000020
+ram              0x00008020         0x00007be0
+interrupt_stack  0x0000fc00         0x00000400
+dualport_ram     0x00011000         0x00000100
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+                0x0000800c                exit = _exit
+LOAD obj/default/hello_world_small.o
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libm.a
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+LOAD E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a
+END GROUP
+LOAD e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+                0x00008000                __alt_mem_ram = 0x8000
+                0x00011000                __alt_mem_dualport_ram = 0x11000
+
+.entry          0x00008000       0x20
+ *(.entry)
+ .entry         0x00008000       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+                0x00008000                __reset
+                0x0000800c                _exit
+
+.exceptions     0x00008020      0x120
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00008020        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00008020                alt_irq_entry
+ .exceptions.entry.label
+                0x00008020        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00008020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00008020       0x54 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00008074       0x10 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00008084        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00008088        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000808c        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000808c        0x8 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00008094        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00008098        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00008098        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00008098       0x54 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000080ec       0x54 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000080ec                alt_irq_handler
+                0x00008140                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.ledram         0x00011000       0x20
+                0x00011000                PROVIDE (_alt_partition_ledram_start, ABSOLUTE (.))
+ *(.ledram .ledram.*)
+ .ledram        0x00011000       0x20 obj/default/hello_world_small.o
+                0x00011000                led_data
+                0x00011020                . = ALIGN (0x4)
+                0x00011020                PROVIDE (_alt_partition_ledram_end, ABSOLUTE (.))
+
+.text           0x00008140      0x5b8
+                0x00008140                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008140       0x3c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+                0x00008140                _start
+ .text          0x0000817c       0xe4 obj/default/hello_world_small.o
+                0x0000817c                timer_isr
+                0x000081b0                main
+ .text          0x00008260       0xa4 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                0x00008260                _puts_r
+                0x000082f0                puts
+ .text          0x00008304       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x00008304                strlen
+ .text          0x00008324       0xbc e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x00008324                __sfvwrite_small_dev
+ .text          0x000083e0        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .text          0x000083e0       0x78 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                0x000083e0                _write_r
+ .text          0x00008458        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x00008458       0x9c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+                0x00008458                alt_ic_irq_enabled
+                0x00008470                alt_ic_irq_enable
+                0x000084b0                alt_ic_irq_disable
+                0x000084f0                alt_ic_isr_register
+ .text          0x000084f4       0x6c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000084f4                alt_iic_isr_register
+ .text          0x00008560        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00008560        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00008560        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00008560       0x8c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+                0x00008580                alt_load
+ .text          0x000085ec       0x2c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+                0x000085ec                alt_main
+ .text          0x00008618       0x78 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+                0x00008618                write
+ .text          0x00008690       0x24 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008690                alt_sys_init
+                0x00008694                alt_irq_init
+ .text          0x000086b4       0x34 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x000086b4                altera_avalon_jtag_uart_write
+ .text          0x000086e8        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000086e8                alt_dcache_flush_all
+ .text          0x000086ec        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x000086ec        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000086ec        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000086ec                alt_icache_flush_all
+ .text          0x000086f0        0x8 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000086f0                altera_nios2_qsys_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                0x000086f8                PROVIDE (__etext, ABSOLUTE (.))
+                0x000086f8                PROVIDE (_etext, ABSOLUTE (.))
+                0x000086f8                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000086f8                . = ALIGN (0x4)
+                0x000086f8                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x000086f8                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x000086f8                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x000086f8                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x000086f8                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x000086f8                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x000086f8                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x000086f8                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000086f8                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x000086f8                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000086f8                . = ALIGN (0x4)
+
+.rodata         0x000086f8       0x2c
+                0x000086f8                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000086f8                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x000086f8       0x28 obj/default/hello_world_small.o
+ .rodata.str1.4
+                0x00008720        0x4 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ *(.rodata1)
+                0x00008724                . = ALIGN (0x4)
+                0x00008724                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000086f8                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00008724       0xf4 load address 0x00008818
+                0x00008724                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00008724                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00008724        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .data          0x00008724        0x0 obj/default/hello_world_small.o
+ .data          0x00008724        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .data          0x00008724        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .data          0x00008724        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x00008724       0xe0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data          0x00008804        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .data          0x00008804        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00008804        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00010804                _gp = ABSOLUTE ((. + 0x8000))
+                0x00010804                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00008804        0x8 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x00008804                _impure_ptr
+                0x00008808                _global_impure_ptr
+ .sdata         0x0000880c        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000880c                alt_priority_mask
+ .sdata         0x00008810        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008810                uart
+ .sdata         0x00008814        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00008814                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00008818                . = ALIGN (0x4)
+                0x00008818                _edata = ABSOLUTE (.)
+                0x00008818                PROVIDE (edata, ABSOLUTE (.))
+                0x00008818                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00008818                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000890c      0x11c
+                0x0000890c                __bss_start = ABSOLUTE (.)
+                0x0000890c                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000890c                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000890c        0x8 obj/default/hello_world_small.o
+                0x0000890c                counter
+                0x00008910                go
+ .sbss          0x00008914        0x4 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x00008914                errno
+ .sbss          0x00008918        0x4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00008918                alt_irq_active
+ .sbss          0x0000891c        0xc E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000891c                alt_argc
+                0x00008920                alt_argv
+                0x00008924                alt_envp
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00008928                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00008928                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .bss           0x00008928        0x0 obj/default/hello_world_small.o
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .bss           0x00008928        0x0 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00008928        0x0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ *(COMMON)
+ COMMON         0x00008928      0x100 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00008928                alt_irq
+                0x00008a28                . = ALIGN (0x4)
+                0x00008a28                __bss_end = ABSOLUTE (.)
+
+.ram            0x00008a28        0x0
+                0x00008a28                PROVIDE (_alt_partition_ram_start, ABSOLUTE (.))
+ *(.ram. ram.*)
+                0x00008a28                . = ALIGN (0x4)
+                0x00008a28                PROVIDE (_alt_partition_ram_end, ABSOLUTE (.))
+                0x00008a28                _end = ABSOLUTE (.)
+                0x00008a28                end = ABSOLUTE (.)
+                0x00008a28                __alt_stack_base = ABSOLUTE (.)
+                0x00008a28                PROVIDE (_alt_partition_ram_load_addr, LOADADDR (.ram))
+
+.dualport_ram   0x00011020        0x0 load address 0x00008a28
+                0x00011020                PROVIDE (_alt_partition_dualport_ram_start, ABSOLUTE (.))
+ *(.dualport_ram. dualport_ram.*)
+                0x00011020                . = ALIGN (0x4)
+                0x00011020                PROVIDE (_alt_partition_dualport_ram_end, ABSOLUTE (.))
+                0x00008a28                PROVIDE (_alt_partition_dualport_ram_load_addr, LOADADDR (.dualport_ram))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x26
+ *(.comment)
+ .comment       0x00000000       0x26 obj/default/hello_world_small.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .comment       0x00000000       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x27 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x298
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/hello_world_small.o
+ .debug_aranges
+                0x00000048       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x00000068       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000088       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x000000a8       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x000000c8       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x000000e8       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000108       0x30 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000138       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000160       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000180       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x000001a0       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x000001c0       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x000001e0       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000200       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000220       0x38 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000258       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000278       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_pubnames
+                0x00000000      0x3cb
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x49 obj/default/hello_world_small.o
+ .debug_pubnames
+                0x00000049       0x27 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_pubnames
+                0x00000070       0x1d e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x0000008d       0x2b e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_pubnames
+                0x000000b8       0x39 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x000000f1       0x1f e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_pubnames
+                0x00000110       0x1c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_pubnames
+                0x0000012c       0x6e E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_pubnames
+                0x0000019a       0x2b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_pubnames
+                0x000001c5       0x32 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x000001f7       0x3b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x00000232       0x1f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x00000251       0x46 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x00000297       0x1c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_pubnames
+                0x000002b3       0x3d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000002f0       0x34 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_pubnames
+                0x00000324       0x2b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x0000034f       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_pubnames
+                0x0000036f       0x2b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x0000039a       0x31 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_info     0x00000000     0x2e40
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x6e E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000006e      0x135 obj/default/hello_world_small.o
+ .debug_info    0x000001a3      0x685 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_info    0x00000828       0xc2 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x000008ea      0x68e e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x00000f78      0x636 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x000015ae      0x68c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x00001c3a       0x8c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00001cc6      0x341 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x00002007      0x1f2 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000021f9       0x77 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00002270      0x17b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000023eb       0x92 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000247d      0x12e E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000025ab      0x125 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000026d0      0x179 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x00002849      0x199 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000029e2      0x18f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00002b71       0x8d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00002bfe       0xab E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00002ca9       0x7d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00002d26       0x8d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00002db3       0x8d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_abbrev   0x00000000     0x10b8
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0xe1 obj/default/hello_world_small.o
+ .debug_abbrev  0x000000f3      0x180 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x00000273       0x7a e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000002ed      0x179 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x00000466      0x13f e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x000005a5      0x16c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x00000711       0x3b e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000074c      0x160 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000008ac      0x17e E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000a2a       0x12 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000a3c      0x117 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000b53       0x44 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000b97       0x97 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000c2e       0xa6 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000cd4       0xdd E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x00000db1       0xea E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000e9b       0xf0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000f8b       0x3f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000fca       0x5e E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00001028       0x12 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000103a       0x3f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00001079       0x3f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_line     0x00000000     0x2ef6
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066      0x2d6 obj/default/hello_world_small.o
+ .debug_line    0x0000033c      0x2b2 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_line    0x000005ee      0x250 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x0000083e      0x2a9 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x00000ae7      0x230 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x00000d17      0x29d e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x00000fb4      0x1e2 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00001196      0x295 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000142b      0x24f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000167a       0x6b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x000016e5      0x235 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000191a       0x72 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000198c      0x22d E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00001bb9      0x2d8 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00001e91      0x2c1 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x00002152      0x2b5 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00002407      0x30a E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00002711      0x1cb E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000028dc      0x1c0 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00002a9c       0xab E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00002b47      0x1cb E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00002d12      0x1e4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_frame    0x00000000      0x2d0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x38 obj/default/hello_world_small.o
+ .debug_frame   0x00000038       0x3c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x00000074       0x20 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x00000094       0x30 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x000000c4       0x2c e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x000000f0       0x50 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x00000140       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000168       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000190       0x38 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x000001c8       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000001f0       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x00000218       0x38 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000250       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000270       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000290       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000002b0       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_str      0x00000000      0xc6b
+ *(.debug_str)
+ .debug_str     0x00000000       0xe2 obj/default/hello_world_small.o
+                                0x12e (size before relaxing)
+ .debug_str     0x000000e2      0x38e e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                                0x450 (size before relaxing)
+ .debug_str     0x00000470       0xe2 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                0x184 (size before relaxing)
+ .debug_str     0x00000552       0x70 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                0x46a (size before relaxing)
+ .debug_str     0x000005c2       0xf8 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                                0x45d (size before relaxing)
+ .debug_str     0x000006ba       0x4f e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                                0x451 (size before relaxing)
+ .debug_str     0x00000709       0x40 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                0x177 (size before relaxing)
+ .debug_str     0x00000749      0x140 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1ef (size before relaxing)
+ .debug_str     0x00000889       0x4c E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x199 (size before relaxing)
+ .debug_str     0x000008d5       0x3a E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x148 (size before relaxing)
+ .debug_str     0x0000090f       0x17 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                0x100 (size before relaxing)
+ .debug_str     0x00000926       0xe9 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1c3 (size before relaxing)
+ .debug_str     0x00000a0f       0x70 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x00000a7f       0x51 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+                                0x16c (size before relaxing)
+ .debug_str     0x00000ad0       0x9a E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x1ed (size before relaxing)
+ .debug_str     0x00000b6a       0x4a E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x00000bb4       0x34 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x106 (size before relaxing)
+ .debug_str     0x00000be8       0x14 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xf6 (size before relaxing)
+ .debug_str     0x00000bfc       0x34 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x106 (size before relaxing)
+ .debug_str     0x00000c30       0x3b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x10d (size before relaxing)
+
+.debug_loc      0x00000000      0x5c9
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x1f obj/default/hello_world_small.o
+ .debug_loc     0x0000001f       0xa2 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x000000c1       0x1e e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x000000df      0x162 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x00000241       0x97 e:/tools/rare/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x000002d8       0x72 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x0000034a       0xf4 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x0000043e       0x5b E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000499       0x1f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x000004b8       0x1f E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000004d7       0x9a E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x00000571       0x32 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x000005a3       0x26 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+                0x0000fc00                __alt_data_end = 0xfc00
+                0x0000fc00                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00008a28                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00010000                PROVIDE (__alt_interrupt_stack_pointer, 0x10000)
+                0x0000fc00                PROVIDE (__alt_interrupt_stack_limit, 0xfc00)
+                0x00008a28                PROVIDE (__alt_heap_start, end)
+                0x0000fc00                PROVIDE (__alt_heap_limit, 0xfc00)
+OUTPUT(dualramtest.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x20 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x28 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000048       0x18 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000060       0x30 E:/casdev/fpgaproj/de0_nano/myproj/fancy3/sw/dualramtest_bsp/\libhal_bsp.a(alt_exception_entry.o)

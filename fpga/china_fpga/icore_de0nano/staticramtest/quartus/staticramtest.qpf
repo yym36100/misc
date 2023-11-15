@@ -1,0 +1,6 @@
+DATE = "10:12:30 November 05, 2015"
+QUARTUS_VERSION = "12.0"
+
+# Revisions
+
+PROJECT_REVISION = "staticramtest"

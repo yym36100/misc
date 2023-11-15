@@ -1,0 +1,24 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst nios_sys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst nios_sys.nios2.cpu -pg 1
+preplace inst nios_sys.button -pg 1 -lvl 3 -y 30
+preplace inst nios_sys.nios2 -pg 1 -lvl 2 -y 360
+preplace inst nios_sys.clk -pg 1 -lvl 1 -y 530
+preplace inst nios_sys.rom -pg 1 -lvl 3 -y 210
+preplace inst nios_sys.timer -pg 1 -lvl 3 -y 290
+preplace inst nios_sys.nios2.clock_bridge -pg 1
+preplace inst nios_sys.ram -pg 1 -lvl 3 -y 130
+preplace inst nios_sys.uart -pg 1 -lvl 3 -y 390
+preplace inst nios_sys.leds -pg 1 -lvl 3 -y 490
+preplace inst nios_sys.nios2.reset_bridge -pg 1
+preplace netloc EXPORT<net_container>nios_sys</net_container>(SLAVE)nios_sys.reset,(SLAVE)clk.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_sys</net_container>(SLAVE)clk.clk_in,(SLAVE)nios_sys.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_sys</net_container>(SLAVE)nios_sys.button_external_connection,(SLAVE)button.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>nios_sys</net_container>(SLAVE)uart.irq,(MASTER)nios2.irq,(SLAVE)timer.irq) 1 2 1 820
+preplace netloc INTERCONNECT<net_container>nios_sys</net_container>(MASTER)nios2.debug_reset_request,(SLAVE)leds.reset,(SLAVE)timer.reset,(SLAVE)ram.reset1,(SLAVE)button.reset,(SLAVE)rom.reset1,(SLAVE)uart.reset,(MASTER)clk.clk_reset,(SLAVE)nios2.reset) 1 1 2 400 500 760
+preplace netloc FAN_OUT<net_container>nios_sys</net_container>(SLAVE)rom.clk1,(SLAVE)leds.clk,(SLAVE)ram.clk1,(SLAVE)button.clk,(MASTER)clk.clk,(SLAVE)timer.clk,(SLAVE)nios2.clk,(SLAVE)uart.clk) 1 1 2 380 300 800
+preplace netloc EXPORT<net_container>nios_sys</net_container>(SLAVE)nios_sys.leds_external_connection,(SLAVE)leds.external_connection) 1 0 3 NJ 520 NJ 520 NJ
+preplace netloc INTERCONNECT<net_container>nios_sys</net_container>(SLAVE)ram.s1,(MASTER)nios2.data_master,(SLAVE)timer.s1,(SLAVE)rom.s1,(MASTER)nios2.instruction_master,(SLAVE)leds.s1,(SLAVE)uart.avalon_jtag_slave,(SLAVE)button.s1,(SLAVE)nios2.debug_mem_slave) 1 1 2 400 320 780
+levelinfo -pg 1 0 170 1010
+levelinfo -hier nios_sys 180 210 520 850 1000

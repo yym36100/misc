@@ -1,0 +1,15 @@
+quartus/incremental_db/
+quartus/db/
+quartus/simulation/modelsim/ramtest.sft
+quartus/simulation/
+*.rpt
+*.done
+*.smsg
+*.jdi
+*.pin
+*.sof
+*.summary
+*.xml
+*.bak
+*.temp
+

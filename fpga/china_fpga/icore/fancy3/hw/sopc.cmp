@@ -1,0 +1,17 @@
+	component sopc is
+		port (
+			clk_clk                        : in  std_logic                     := 'X';             -- clk
+			pio_external_connection_export : out std_logic_vector(7 downto 0);                     -- export
+			dualport_ram_clk2_clk          : in  std_logic                     := 'X';             -- clk
+			dualport_ram_s2_address        : in  std_logic_vector(12 downto 0) := (others => 'X'); -- address
+			dualport_ram_s2_chipselect     : in  std_logic                     := 'X';             -- chipselect
+			dualport_ram_s2_clken          : in  std_logic                     := 'X';             -- clken
+			dualport_ram_s2_write          : in  std_logic                     := 'X';             -- write
+			dualport_ram_s2_readdata       : out std_logic_vector(31 downto 0);                    -- readdata
+			dualport_ram_s2_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			dualport_ram_s2_byteenable     : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			dualport_ram_reset2_reset      : in  std_logic                     := 'X';             -- reset
+			dualport_ram_reset2_reset_req  : in  std_logic                     := 'X'              -- reset_req
+		);
+	end component sopc;
+

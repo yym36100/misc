@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 248 248)
+	(text "vJTAG" (rect 107 0 149 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 232 25 244)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "tdo" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "tdo" (rect 20 41 33 54)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "ir_out[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "ir_out[0]" (rect 20 65 57 78)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 248 40)
+		(output)
+		(text "tck" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "tck" (rect 215 33 227 46)(font "Arial" (font_size 8)))
+		(line (pt 248 40)(pt 232 40))
+	)
+	(port
+		(pt 248 56)
+		(output)
+		(text "tdi" (rect 0 0 12 14)(font "Arial" (font_size 8)))
+		(text "tdi" (rect 218 49 227 62)(font "Arial" (font_size 8)))
+		(line (pt 248 56)(pt 232 56))
+	)
+	(port
+		(pt 248 72)
+		(output)
+		(text "ir_in[0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "ir_in[0]" (rect 197 65 227 78)(font "Arial" (font_size 8)))
+		(line (pt 248 72)(pt 232 72)(line_width 3))
+	)
+	(port
+		(pt 248 88)
+		(output)
+		(text "virtual_state_cdr" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_cdr" (rect 148 81 227 94)(font "Arial" (font_size 8)))
+		(line (pt 248 88)(pt 232 88))
+	)
+	(port
+		(pt 248 104)
+		(output)
+		(text "virtual_state_sdr" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_sdr" (rect 148 97 227 110)(font "Arial" (font_size 8)))
+		(line (pt 248 104)(pt 232 104))
+	)
+	(port
+		(pt 248 120)
+		(output)
+		(text "virtual_state_e1dr" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_e1dr" (rect 142 113 227 126)(font "Arial" (font_size 8)))
+		(line (pt 248 120)(pt 232 120))
+	)
+	(port
+		(pt 248 136)
+		(output)
+		(text "virtual_state_pdr" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_pdr" (rect 148 129 227 142)(font "Arial" (font_size 8)))
+		(line (pt 248 136)(pt 232 136))
+	)
+	(port
+		(pt 248 152)
+		(output)
+		(text "virtual_state_e2dr" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_e2dr" (rect 142 145 227 158)(font "Arial" (font_size 8)))
+		(line (pt 248 152)(pt 232 152))
+	)
+	(port
+		(pt 248 168)
+		(output)
+		(text "virtual_state_udr" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_udr" (rect 148 161 227 174)(font "Arial" (font_size 8)))
+		(line (pt 248 168)(pt 232 168))
+	)
+	(port
+		(pt 248 184)
+		(output)
+		(text "virtual_state_cir" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_cir" (rect 152 177 227 190)(font "Arial" (font_size 8)))
+		(line (pt 248 184)(pt 232 184))
+	)
+	(port
+		(pt 248 200)
+		(output)
+		(text "virtual_state_uir" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "virtual_state_uir" (rect 152 193 227 206)(font "Arial" (font_size 8)))
+		(line (pt 248 200)(pt 232 200))
+	)
+	(drawing
+		(line (pt 0 0)(pt 250 0))
+		(line (pt 250 0)(pt 250 256))
+		(line (pt 0 256)(pt 250 256))
+		(line (pt 0 0)(pt 0 256))
+		(line (pt 16 24)(pt 236 24))
+		(line (pt 236 24)(pt 236 234))
+		(line (pt 16 234)(pt 236 234))
+		(line (pt 16 24)(pt 16 234))
+	)
+)

@@ -1,0 +1,663 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Report</title>
+  <style type="text/css">
+body { font-family:arial ;}
+a { text-decoration:underline ; color:#003000 ;}
+a:hover { text-decoration:underline ; color:0030f0 ;}
+td { padding : 5px ;}
+table.topTitle { width:100% ;}
+table.topTitle td.l { text-align:left ; font-weight: bold ; font-size:30px ;}
+table.topTitle td.r { text-align:right ; font-weight: bold ; font-size:16px ;}
+table.blueBar { width : 100% ; border-spacing : 0px ;}
+table.blueBar td { background:#0036ff ; font-size:12px ; color : white ; text-align : left ; font-weight : bold ;}
+table.blueBar td.l { text-align : left ;}
+table.blueBar td.r { text-align : right ;}
+table.items { width:100% ; border-collapse:collapse ;}
+table.items td.label { font-weight:bold ; font-size:16px ; vertical-align:top ;}
+table.items td.mono { font-family:courier ; font-size:12px ; white-space:pre ;}
+div.label { font-weight:bold ; font-size:16px ; vertical-align:top ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ; font-size:12px ;}
+body { font-family:arial ;}
+table.x { font-family:courier ; border-collapse:collapse ; padding:2px ;}
+table.x td { border:1px solid #bbb ;}
+td.tableTitle { font-weight:bold ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ;}
+table.grid td.tableTitle { font-weight:bold ; text-align:center ;}
+table.mmap { border-collapse:collapse ; text-size:11px ; border:1px solid #d8d8d8 ;}
+table.mmap td { border-color:#d8d8d8 ; border-width:1px ; border-style:solid ;}
+table.mmap td.empty { border-style:none ; background-color:#f0f0f0 ;}
+table.mmap td.slavemodule { text-align:left ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.slavem { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid none solid ;}
+table.mmap td.slaveb { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.mastermodule { text-align:center ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.masterlr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.masterl { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid solid ;}
+table.mmap td.masterm { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid none ;}
+table.mmap td.masterr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid none ;}
+table.mmap td.addr { font-family:courier ; font-size:9px ; text-align:right ;}
+table.connectionboxes { border-collapse:separate ; border-spacing:0px ; font-family:arial ;}
+table.connectionboxes td.from { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.to { font-size:9px ; font-style:italic ; vertical-align:top ; text-align:right ;}
+table.connectionboxes td.lefthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:right ;}
+table.connectionboxes td.righthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.righthandlabel { font-size:11px ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.neighbor { padding:3px ; border:1px solid black ; font-size: 11px ; background:#e8e8e8 ; vertical-align:center ; text-align:center ;}
+table.connectionboxes td.main { padding:8px ; border:1px solid black ; font-size: 14px ; font-weight:bold ; background:#ffffff ; vertical-align:center ; text-align:center ;}
+.parametersbox { border:1px solid #d0d0d0 ; display:inline-block ; max-height:160px ; overflow:auto ; width:360px ; font-size:10px ;}
+.flowbox { display:inline-block ;}
+.parametersbox table { font-size:10px ;}
+td.parametername { font-style:italic ;}
+td.parametervalue { font-weight:bold ;}
+div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; border-top:1px solid #707070 ; border-bottom:1px solid #707070 ; padding:20px ; margin:20px ; width:auto ;}</style>
+ </head>
+ <body>
+  <table class="topTitle">
+   <tr>
+    <td class="l">iCore</td>
+    <td class="r">iCore
+     <br/>1.0
+     <br/>
+    </td>
+   </tr>
+  </table>
+  <table class="blueBar">
+   <tr>
+    <td class="l">2012.05.02.00:00:21</td>
+    <td class="r">Generation Report</td>
+   </tr>
+  </table>
+  <table class="items">
+   <tr>
+    <td class="label">Output Directory</td>
+    <td class="mono">E:/WORK/iCore/LOGIC/</td>
+   </tr>
+   <tr>
+    <td class="label">Files</td>
+    <td class="mono">E:/WORK/iCore/LOGIC/iCore/synthesis/iCore.v (258983 bytes VERILOG)
+     <br/>
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0.ocp (856 bytes OTHER)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0.sdc (4097 bytes SDC)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0.v (301832 bytes VERILOG_ENCRYPT)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_ic_tag_ram.mif (1881 bytes MIF)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_jtag_debug_module_sysclk.v (7171 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_jtag_debug_module_tck.v (8529 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_jtag_debug_module_wrapper.v (10487 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_mult_cell.v (6317 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_ociram_default_contents.mif (5714 bytes MIF)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_oci_test_bench.v (1510 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_rf_ram_a.mif (600 bytes MIF)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_rf_ram_b.mif (600 bytes MIF)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_nios2_qsys_0_test_bench.v (29404 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_sdram_0.v (24338 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_epcs_flash_controller_0.v (17504 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_epcs_flash_controller_0_boot_rom_synth.hex (5148 bytes HEX)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_sysid_qsys_0.v (1454 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_pio_led.v (2197 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_master_translator.sv (16802 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_slave_translator.sv (16043 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_master_agent.sv (8686 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_slave_agent.sv (19132 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_burst_uncompressor.sv (10373 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_avalon_sc_fifo.v (32228 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_addr_router.sv (6735 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_addr_router_001.sv (7301 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_id_router.sv (6027 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_id_router_001.sv (6039 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_id_router_003.sv (5958 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_traffic_limiter.sv (12802 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_avalon_st_pipeline_base.v (4716 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_burst_adapter.sv (37064 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_reset_controller.v (3595 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_reset_synchronizer.v (3564 bytes VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_reset_controller.sdc (1179 bytes SDC)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_cmd_xbar_demux.sv (4741 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_cmd_xbar_demux_001.sv (6004 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_arbitrator.sv (9460 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_cmd_xbar_mux.sv (10416 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_rsp_xbar_demux.sv (4100 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_rsp_xbar_demux_003.sv (3476 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_rsp_xbar_mux.sv (12035 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_rsp_xbar_mux_001.sv (13655 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_width_adapter.sv (35859 bytes SYSTEM_VERILOG)
+     <br/>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/iCore_irq_mapper.sv (1682 bytes SYSTEM_VERILOG)
+     <br/>
+    </td>
+   </tr>
+   <tr>
+    <td class="label">Instantiations</td>
+    <td class="mono">
+     <table class="grid">
+      <tr>
+       <td><b>iCore</b>
+        <br/>iCore v1.0</td>
+       <td><b>iCore_nios2_qsys_0</b> as nios2_qsys_0
+        <br/><b>iCore_sdram_0</b> as sdram_0
+        <br/><b>iCore_epcs_flash_controller_0</b> as epcs_flash_controller_0
+        <br/><b>iCore_sysid_qsys_0</b> as sysid_qsys_0
+        <br/><b>iCore_pio_led</b> as pio_led
+        <br/><b>altera_merlin_master_translator</b> as nios2_qsys_0_instruction_master_translator, nios2_qsys_0_data_master_translator
+        <br/><b>altera_merlin_slave_translator</b> as nios2_qsys_0_jtag_debug_module_translator, sdram_0_s1_translator, epcs_flash_controller_0_epcs_control_port_translator, pio_led_s1_translator, sysid_qsys_0_control_slave_translator
+        <br/><b>altera_merlin_master_agent</b> as nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent, nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent
+        <br/><b>altera_merlin_slave_agent</b> as epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent, sdram_0_s1_translator_avalon_universal_slave_0_agent, sysid_qsys_0_control_slave_translator_avalon_universal_slave_0_agent, pio_led_s1_translator_avalon_universal_slave_0_agent, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent
+        <br/><b>altera_avalon_sc_fifo</b> as epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent_rsp_fifo, sdram_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, sysid_qsys_0_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, pio_led_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
+        <br/><b>iCore_addr_router</b> as addr_router
+        <br/><b>iCore_addr_router_001</b> as addr_router_001
+        <br/><b>iCore_id_router</b> as id_router, id_router_002
+        <br/><b>iCore_id_router_001</b> as id_router_001
+        <br/><b>iCore_id_router_003</b> as id_router_003, id_router_004
+        <br/><b>altera_merlin_traffic_limiter</b> as limiter
+        <br/><b>altera_merlin_burst_adapter</b> as burst_adapter
+        <br/><b>altera_reset_controller</b> as rst_controller
+        <br/><b>iCore_cmd_xbar_demux</b> as cmd_xbar_demux
+        <br/><b>iCore_cmd_xbar_demux_001</b> as cmd_xbar_demux_001
+        <br/><b>iCore_cmd_xbar_mux</b> as cmd_xbar_mux, cmd_xbar_mux_001, cmd_xbar_mux_002
+        <br/><b>iCore_rsp_xbar_demux</b> as rsp_xbar_demux, rsp_xbar_demux_001, rsp_xbar_demux_002
+        <br/><b>iCore_rsp_xbar_demux_003</b> as rsp_xbar_demux_003, rsp_xbar_demux_004
+        <br/><b>iCore_rsp_xbar_mux</b> as rsp_xbar_mux
+        <br/><b>iCore_rsp_xbar_mux_001</b> as rsp_xbar_mux_001
+        <br/><b>altera_merlin_width_adapter</b> as width_adapter, width_adapter_001
+        <br/><b>iCore_irq_mapper</b> as irq_mapper
+        <br/>
+       </td>
+      </tr>
+      <tr>
+       <td><b>iCore_nios2_qsys_0</b>
+        <br/>altera_nios2_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_sdram_0</b>
+        <br/>altera_avalon_new_sdram_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_epcs_flash_controller_0</b>
+        <br/>altera_avalon_epcs_flash_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_sysid_qsys_0</b>
+        <br/>altera_avalon_sysid_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_pio_led</b>
+        <br/>altera_avalon_pio v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_translator</b>
+        <br/>altera_merlin_master_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_translator</b>
+        <br/>altera_merlin_slave_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_agent</b>
+        <br/>altera_merlin_master_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_agent</b>
+        <br/>altera_merlin_slave_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_sc_fifo</b>
+        <br/>altera_avalon_sc_fifo v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_addr_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_addr_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_id_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_id_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_id_router_003</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_traffic_limiter</b>
+        <br/>altera_merlin_traffic_limiter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_burst_adapter</b>
+        <br/>altera_merlin_burst_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_reset_controller</b>
+        <br/>altera_reset_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_cmd_xbar_demux</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_cmd_xbar_demux_001</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_cmd_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_rsp_xbar_demux</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_rsp_xbar_demux_003</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_rsp_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_rsp_xbar_mux_001</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_width_adapter</b>
+        <br/>altera_merlin_width_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>iCore_irq_mapper</b>
+        <br/>altera_irq_mapper v11.1</td>
+       <td></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
+  <div style="width:100% ;  height:10px"> </div>
+  <div class="label">Generation Messages</div>
+  <div style="white-space:pre ; font-family:courier">2012.05.01.23:53:05 [Debug] iCore.altera_nios2_qsys: When a generate simulation callback is defined a synthesis generation callback should also be defined
+2012.05.01.23:58:56 [Debug] iCore.nios2_qsys_0: Timing: VAL:1/0.070s ELA:1/0.010s
+2012.05.01.23:58:56 [Info] iCore.sysid_qsys_0: System ID will no longer be automatically assigned.
+2012.05.01.23:58:56 [Info] iCore.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+2012.05.01.23:58:56 [Debug] iCore.sysid_qsys_0: Timing: VAL:2/0.001s/0.001s
+2012.05.01.23:58:56 [Warning] iCore.epcs_flash_controller_0: Interrupt sender <b>epcs_flash_controller_0.irq</b> is not connected to an interrupt receiver
+2012.05.01.23:58:56 [Info] iCore: Generating <b>iCore</b> "<b>iCore</b>" for QUARTUS_SYNTH
+2012.05.01.23:58:56 [Debug] iCore: queue size: 0 starting:iCore "iCore"
+2012.05.01.23:58:57 [Debug] Transform: PipelineBridgeSwap
+2012.05.01.23:58:57 [Info] pipeline_bridge_swap_transform: After transform: <b>6</b> modules, <b>23</b> connections
+2012.05.01.23:58:57 [Debug] Transform: ClockCrossingBridgeSwap
+2012.05.01.23:58:57 [Debug] Transform: QsysBetaIPSwap
+2012.05.01.23:58:57 [Debug] Transform: CustomInstructionTransform
+2012.05.01.23:58:57 [Info] No custom instruction connections, skipping transform 
+2012.05.01.23:58:57 [Debug] Transform: TristateConduitUpgradeTransform
+2012.05.01.23:58:57 [Debug] Transform: TranslatorTransform
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Info] merlin_translator_transform: After transform: <b>13</b> modules, <b>51</b> connections
+2012.05.01.23:58:57 [Debug] Transform: DomainTransform
+2012.05.01.23:58:57 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.instruction_master and nios2_qsys_0_instruction_master_translator.avalon_anti_master_0
+2012.05.01.23:58:57 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.data_master and nios2_qsys_0_data_master_translator.avalon_anti_master_0
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:57 [Progress] min: 0
+2012.05.01.23:58:57 [Progress] max: 1
+2012.05.01.23:58:57 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0_jtag_debug_module_translator.avalon_anti_slave_0 and nios2_qsys_0.jtag_debug_module
+2012.05.01.23:58:58 [Debug] Transform merlin_domain_transform not run on matched interfaces sdram_0_s1_translator.avalon_anti_slave_0 and sdram_0.s1
+2012.05.01.23:58:58 [Debug] Transform merlin_domain_transform not run on matched interfaces epcs_flash_controller_0_epcs_control_port_translator.avalon_anti_slave_0 and epcs_flash_controller_0.epcs_control_port
+2012.05.01.23:58:58 [Debug] Transform merlin_domain_transform not run on matched interfaces pio_led_s1_translator.avalon_anti_slave_0 and pio_led.s1
+2012.05.01.23:58:58 [Debug] Transform merlin_domain_transform not run on matched interfaces sysid_qsys_0_control_slave_translator.avalon_anti_slave_0 and sysid_qsys_0.control_slave
+2012.05.01.23:58:58 [Info] merlin_domain_transform: After transform: <b>26</b> modules, <b>136</b> connections
+2012.05.01.23:58:58 [Debug] Transform: RouterTransform
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Info] merlin_router_transform: After transform: <b>33</b> modules, <b>164</b> connections
+2012.05.01.23:58:58 [Debug] Transform: TrafficLimiterTransform
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Info] merlin_traffic_limiter_transform: After transform: <b>34</b> modules, <b>169</b> connections
+2012.05.01.23:58:58 [Debug] Transform: BurstTransform
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Info] merlin_burst_transform: After transform: <b>35</b> modules, <b>173</b> connections
+2012.05.01.23:58:58 [Debug] Transform: ResetAdaptation
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:58 [Info] reset_adaptation_transform: After transform: <b>36</b> modules, <b>136</b> connections
+2012.05.01.23:58:58 [Debug] Transform: NetworkToSwitchTransform
+2012.05.01.23:58:58 [Progress] min: 0
+2012.05.01.23:58:58 [Progress] max: 1
+2012.05.01.23:58:58 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Info] merlin_network_to_switch_transform: After transform: <b>49</b> modules, <b>166</b> connections
+2012.05.01.23:58:59 [Debug] Transform: WidthTransform
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Info] merlin_width_transform: After transform: <b>51</b> modules, <b>172</b> connections
+2012.05.01.23:58:59 [Debug] Transform: RouterTableTransform
+2012.05.01.23:58:59 [Debug] Transform: ClockCrossingTransform
+2012.05.01.23:58:59 [Debug] Transform: PipelineTransform
+2012.05.01.23:58:59 [Debug] Transform: TrafficLimiterUpdateTransform
+2012.05.01.23:58:59 [Info] limiter_update_transform: After transform: <b>51</b> modules, <b>173</b> connections
+2012.05.01.23:58:59 [Debug] Transform: InterruptMapperTransform
+2012.05.01.23:58:59 [Progress] min: 0
+2012.05.01.23:58:59 [Progress] max: 1
+2012.05.01.23:58:59 [Progress] current: 1
+2012.05.01.23:58:59 [Info] merlin_interrupt_mapper_transform: After transform: <b>52</b> modules, <b>176</b> connections
+2012.05.01.23:58:59 [Debug] Transform: InterruptSyncTransform
+2012.05.01.23:58:59 [Debug] Transform: InterruptFanoutTransform
+2012.05.01.23:59:00 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:endofpacket (endofpacket)"
+2012.05.01.23:59:00 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:dataavailable (dataavailable)"
+2012.05.01.23:59:00 [Warning] system: "No matching role found for epcs_flash_controller_0:epcs_control_port:readyfordata (readyfordata)"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_nios2_qsys</b> "<b>submodules/iCore_nios2_qsys_0</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_new_sdram_controller</b> "<b>submodules/iCore_sdram_0</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_epcs_flash_controller</b> "<b>submodules/iCore_epcs_flash_controller_0</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sysid_qsys</b> "<b>submodules/iCore_sysid_qsys_0</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_pio</b> "<b>submodules/iCore_pio_led</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_addr_router</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_addr_router_001</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_id_router</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_id_router_001</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_id_router</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_id_router_003</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_router</b> "<b>submodules/iCore_id_router_003</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_burst_adapter</b> "<b>submodules/altera_merlin_burst_adapter</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_cmd_xbar_demux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_cmd_xbar_demux_001</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/iCore_cmd_xbar_mux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/iCore_cmd_xbar_mux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/iCore_cmd_xbar_mux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_rsp_xbar_demux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_rsp_xbar_demux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_rsp_xbar_demux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_rsp_xbar_demux_003</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/iCore_rsp_xbar_demux_003</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/iCore_rsp_xbar_mux</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/iCore_rsp_xbar_mux_001</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2012.05.01.23:59:00 [Debug] iCore: "<b>iCore</b>" reuses <b>altera_irq_mapper</b> "<b>submodules/iCore_irq_mapper</b>"
+2012.05.01.23:59:01 [Debug] iCore: queue size: 48 starting:altera_nios2_qsys "submodules/iCore_nios2_qsys_0"
+2012.05.01.23:59:01 [Info] nios2_qsys_0: Starting RTL generation for module 'iCore_nios2_qsys_0'
+2012.05.01.23:59:01 [Info] nios2_qsys_0:   Generation command is [exec C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/11.1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/11.1/quartus/sopc_builder/bin/europa -I C:/altera/11.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/11.1/quartus/sopc_builder/bin -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/11.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=iCore_nios2_qsys_0 --dir=C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0001_nios2_qsys_0_gen/ --quartus_dir=C:/altera/11.1/quartus --verilog --config=C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0001_nios2_qsys_0_gen//iCore_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:05 (*) Starting Nios II generation
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:05 (*)   Checking for encrypted license (non-evaluation).
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:06 (*)   Encrypted license found.  SOF will not be time-limited.
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:06 (*)   Elaborating CPU configuration settings
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:06 (*)   Creating all objects for CPU
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:08 (*)     Pipeline frontend
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:11 (*)   Generating RTL from CPU objects
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:13 (*)   Creating encrypted RTL
+2012.05.01.23:59:15 [Info] nios2_qsys_0: # 2012.05.01 23:59:15 (*) Done Nios II generation
+2012.05.01.23:59:15 [Info] nios2_qsys_0: Done RTL generation for module 'iCore_nios2_qsys_0'
+2012.05.01.23:59:16 [Info] nios2_qsys_0: "<b>iCore</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"
+2012.05.01.23:59:16 [Debug] iCore: queue size: 47 starting:altera_avalon_new_sdram_controller "submodules/iCore_sdram_0"
+2012.05.01.23:59:16 [Info] Starting classic module elaboration.
+2012.05.01.23:59:19 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0002_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0002_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.01.23:59:27 [Info] Finished elaborating classic module.
+2012.05.01.23:59:27 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0002_sopclgen/yysystem.ptf
+2012.05.01.23:59:27 [Info] Running sopc_builder...
+2012.05.01.23:59:29 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0002_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0002_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.01.23:59:34 [Progress] No .sopc_builder configuration file(!)
+2012.05.01.23:59:35 [Progress] .
+2012.05.01.23:59:37 [Progress] .
+2012.05.01.23:59:37 [Progress] # 2012.05.01 23:59:37 (*) Running Test Generator Program for iCore_sdram_0
+2012.05.01.23:59:41 [Progress] # 2012.05.01 23:59:41 (*) Success: sopc_builder finished.
+2012.05.01.23:59:41 [Info] sdram_0: "<b>iCore</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram_0</b>"
+2012.05.01.23:59:41 [Debug] iCore: queue size: 46 starting:altera_avalon_epcs_flash_controller "submodules/iCore_epcs_flash_controller_0"
+2012.05.01.23:59:41 [Info] Starting classic module elaboration.
+2012.05.01.23:59:43 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0003_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.01.23:59:50 [Info] Finished elaborating classic module.
+2012.05.01.23:59:50 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0003_sopclgen/yysystem.ptf
+2012.05.01.23:59:50 [Info] Running sopc_builder...
+2012.05.01.23:59:52 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0003_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.01.23:59:56 [Progress] No .sopc_builder configuration file(!)
+2012.05.01.23:59:56 [Progress] .
+2012.05.01.23:59:59 [Progress] # 2012.05.01 23:59:59 (*) Success: sopc_builder finished.
+2012.05.02.00:00:00 [Info] epcs_flash_controller_0: "<b>iCore</b>" instantiated <b>altera_avalon_epcs_flash_controller</b> "<b>epcs_flash_controller_0</b>"
+2012.05.02.00:00:00 [Debug] iCore: queue size: 45 starting:altera_avalon_sysid_qsys "submodules/iCore_sysid_qsys_0"
+2012.05.02.00:00:00 [Info] sysid_qsys_0: "<b>iCore</b>" instantiated <b>altera_avalon_sysid_qsys</b> "<b>sysid_qsys_0</b>"
+2012.05.02.00:00:00 [Debug] iCore: queue size: 44 starting:altera_avalon_pio "submodules/iCore_pio_led"
+2012.05.02.00:00:00 [Info] Starting classic module elaboration.
+2012.05.02.00:00:02 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0005_sopclgen  --no_splash --refresh C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.02.00:00:08 [Info] Finished elaborating classic module.
+2012.05.02.00:00:08 [Progress] Executing: C:/altera/11.1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0005_sopclgen/yysystem.ptf
+2012.05.02.00:00:08 [Info] Running sopc_builder...
+2012.05.02.00:00:10 [Progress] "c:/altera/11.1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0005_sopclgen  --generate C:/Users/aureole/AppData/Local/Temp/alt5461_7936565755619647199.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1/quartus" --sopc_perl="c:/altera/11.1/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1/quartus/../ip/altera/nios2_ip"
+2012.05.02.00:00:16 [Progress] No .sopc_builder configuration file(!)
+2012.05.02.00:00:16 [Progress] .
+2012.05.02.00:00:19 [Progress] # 2012.05.02 00:00:19 (*) Success: sopc_builder finished.
+2012.05.02.00:00:20 [Info] pio_led: "<b>iCore</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_led</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 43 starting:altera_merlin_master_translator "submodules/altera_merlin_master_translator"
+2012.05.02.00:00:20 [Info] nios2_qsys_0_instruction_master_translator: "<b>iCore</b>" instantiated <b>altera_merlin_master_translator</b> "<b>nios2_qsys_0_instruction_master_translator</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 41 starting:altera_merlin_slave_translator "submodules/altera_merlin_slave_translator"
+2012.05.02.00:00:20 [Info] nios2_qsys_0_jtag_debug_module_translator: "<b>iCore</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>nios2_qsys_0_jtag_debug_module_translator</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 36 starting:altera_merlin_master_agent "submodules/altera_merlin_master_agent"
+2012.05.02.00:00:20 [Info] nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "<b>iCore</b>" instantiated <b>altera_merlin_master_agent</b> "<b>nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 35 starting:altera_merlin_slave_agent "submodules/altera_merlin_slave_agent"
+2012.05.02.00:00:20 [Info] epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent: "<b>iCore</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 34 starting:altera_avalon_sc_fifo "submodules/altera_avalon_sc_fifo"
+2012.05.02.00:00:20 [Info] epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent_rsp_fifo: "<b>iCore</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>epcs_flash_controller_0_epcs_control_port_translator_avalon_universal_slave_0_agent_rsp_fifo</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 24 starting:altera_merlin_router "submodules/iCore_addr_router"
+2012.05.02.00:00:20 [Info] addr_router: "<b>iCore</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 23 starting:altera_merlin_router "submodules/iCore_addr_router_001"
+2012.05.02.00:00:20 [Info] addr_router_001: "<b>iCore</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_001</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 22 starting:altera_merlin_router "submodules/iCore_id_router"
+2012.05.02.00:00:20 [Info] id_router: "<b>iCore</b>" instantiated <b>altera_merlin_router</b> "<b>id_router</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 21 starting:altera_merlin_router "submodules/iCore_id_router_001"
+2012.05.02.00:00:20 [Info] id_router_001: "<b>iCore</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_001</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 19 starting:altera_merlin_router "submodules/iCore_id_router_003"
+2012.05.02.00:00:20 [Info] id_router_003: "<b>iCore</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_003</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 17 starting:altera_merlin_traffic_limiter "submodules/altera_merlin_traffic_limiter"
+2012.05.02.00:00:20 [Info] limiter: "<b>iCore</b>" instantiated <b>altera_merlin_traffic_limiter</b> "<b>limiter</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 16 starting:altera_merlin_burst_adapter "submodules/altera_merlin_burst_adapter"
+2012.05.02.00:00:20 [Info] burst_adapter: "<b>iCore</b>" instantiated <b>altera_merlin_burst_adapter</b> "<b>burst_adapter</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 15 starting:altera_reset_controller "submodules/altera_reset_controller"
+2012.05.02.00:00:20 [Info] rst_controller: "<b>iCore</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 14 starting:altera_merlin_demultiplexer "submodules/iCore_cmd_xbar_demux"
+2012.05.02.00:00:20 [Info] cmd_xbar_demux: "<b>iCore</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 13 starting:altera_merlin_demultiplexer "submodules/iCore_cmd_xbar_demux_001"
+2012.05.02.00:00:20 [Info] cmd_xbar_demux_001: "<b>iCore</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_001</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 12 starting:altera_merlin_multiplexer "submodules/iCore_cmd_xbar_mux"
+2012.05.02.00:00:20 [Info] cmd_xbar_mux: "<b>iCore</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 9 starting:altera_merlin_demultiplexer "submodules/iCore_rsp_xbar_demux"
+2012.05.02.00:00:20 [Info] rsp_xbar_demux: "<b>iCore</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 6 starting:altera_merlin_demultiplexer "submodules/iCore_rsp_xbar_demux_003"
+2012.05.02.00:00:20 [Info] rsp_xbar_demux_003: "<b>iCore</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux_003</b>"
+2012.05.02.00:00:20 [Debug] iCore: queue size: 4 starting:altera_merlin_multiplexer "submodules/iCore_rsp_xbar_mux"
+2012.05.02.00:00:20 [Info] rsp_xbar_mux: "<b>iCore</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux</b>"
+2012.05.02.00:00:20 [Info] Reusing file <b>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2012.05.02.00:00:20 [Debug] iCore: queue size: 3 starting:altera_merlin_multiplexer "submodules/iCore_rsp_xbar_mux_001"
+2012.05.02.00:00:21 [Info] rsp_xbar_mux_001: "<b>iCore</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux_001</b>"
+2012.05.02.00:00:21 [Info] Reusing file <b>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2012.05.02.00:00:21 [Debug] iCore: queue size: 2 starting:altera_merlin_width_adapter "submodules/altera_merlin_width_adapter"
+2012.05.02.00:00:21 [Info] width_adapter: "<b>iCore</b>" instantiated <b>altera_merlin_width_adapter</b> "<b>width_adapter</b>"
+2012.05.02.00:00:21 [Info] Reusing file <b>E:/WORK/iCore/LOGIC/iCore/synthesis/submodules/altera_merlin_burst_uncompressor.sv</b>
+2012.05.02.00:00:21 [Debug] iCore: queue size: 0 starting:altera_irq_mapper "submodules/iCore_irq_mapper"
+2012.05.02.00:00:21 [Info] irq_mapper: "<b>iCore</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2012.05.02.00:00:21 [Info] iCore: Done <b>iCore</b>" with 28 modules, 75 files, 1434531 bytes
+</div>
+  <div style="width:100% ; background:#eee ; height:10px"> </div>
+ </body>
+</html>

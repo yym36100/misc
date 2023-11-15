@@ -1,0 +1,1 @@
+%QUARTUS_ROOTDIR%\\bin\\quartus_stp.exe -t TCL_Server_vJTAG_SimpleTest.tcl 

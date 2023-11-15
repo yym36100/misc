@@ -1,0 +1,5 @@
+// elf info
+nios2-elf-readelf.exe t2.elf -a
+
+// converter
+nios2-elf-objcopy.exe -O binary t2.elf t2.bin

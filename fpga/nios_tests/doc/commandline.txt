@@ -1,0 +1,2 @@
+nios2-elf-objcopy.exe  -O ihex hello.elf hello2.hex
+nios2-elf-objcopy.exe -I srec -O ihex hello.elf hello2.hex

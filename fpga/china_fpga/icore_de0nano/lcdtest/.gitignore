@@ -1,0 +1,15 @@
+*.rpt
+*.done
+*.smsg
+*.jdi
+*.pin
+*.sof
+*.summary
+*.xml
+*.bak
+*.temp
+quartus/db/
+quartus/incremental_db/
+quartus/greybox_tmp/
+quartus/simulation/
+~$*

@@ -1,0 +1,5 @@
+obj/
+JLinkLog.txt
+JLinkSettings.ini
+demo_demo.dep
+demo_fsmc.dep

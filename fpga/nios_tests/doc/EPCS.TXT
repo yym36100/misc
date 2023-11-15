@@ -1,0 +1,11 @@
+epcs file generalas
+
+a qsisben be kell tenne a ram init fileot csak a nevet hex nelkul es ujrageneralni mindent
+azten az eclipseben lessz egy uj make target valami mem init vagy mi - ennek kell adni egy make et
+aztan generalja a hex file ot, es egy qip file ot, a qip be kell tenni a quartus projektbe
+
+a hexet nem kell masolni sehova
+aztan kesz, utana jon a epcs generalas
+kell egy jic et csinalni a flashfile converterel
+active serial  + loader + compression
+aztan a programozoban kivalasztalni (kipipalni) a jic et es meg is van
