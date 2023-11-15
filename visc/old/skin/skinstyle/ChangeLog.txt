@@ -1,0 +1,31 @@
+// ChangeLog for SkinStyle Win32 skin library
+
+06.16.01:
+	Class Diagram
+	-------------
+			   /-->SkinDialog
+	KWindow-->SkinObject-->SkinButton
+	      \-->TransLabel
+
+06.06.01:
+	Added Derived class TransLabel
+
+	Class Diagram
+	-------------
+	KWindow-->SkinObject-->SkinButton
+	      \-->TransLabel
+
+06.05.01:
+	Added Derived class SkinButton	
+
+	Class Diagram
+	-------------
+	KWindow-->SkinObject-->SkinButton
+
+06.04.01:
+	Created base window class KWindow
+	and derived SkinObject
+
+	Class Diagram
+	-------------
+	KWindow-->SkinObject

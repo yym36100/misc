@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uvtimersim", "uvtimersim\uvtimersim.vcproj", "{881849B0-2B74-4FCF-B5FF-0BBC65D216D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{881849B0-2B74-4FCF-B5FF-0BBC65D216D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{881849B0-2B74-4FCF-B5FF-0BBC65D216D3}.Debug|Win32.Build.0 = Debug|Win32
+		{881849B0-2B74-4FCF-B5FF-0BBC65D216D3}.Release|Win32.ActiveCfg = Release|Win32
+		{881849B0-2B74-4FCF-B5FF-0BBC65D216D3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
