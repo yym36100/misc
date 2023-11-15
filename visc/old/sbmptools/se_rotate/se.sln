@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "se", "se\se.vcxproj", "{74252C06-07D9-48DF-B7E0-6E9594DC6D82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		64rel|Win32 = 64rel|Win32
+		64rel|x64 = 64rel|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.64rel|Win32.ActiveCfg = 64rel|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.64rel|Win32.Build.0 = 64rel|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.64rel|x64.ActiveCfg = Template|x64
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.64rel|x64.Build.0 = Template|x64
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Debug|Win32.Build.0 = Debug|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Debug|x64.ActiveCfg = Debug|x64
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Debug|x64.Build.0 = Debug|x64
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Release|Win32.ActiveCfg = Release|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Release|Win32.Build.0 = Release|Win32
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Release|x64.ActiveCfg = Release|x64
+		{74252C06-07D9-48DF-B7E0-6E9594DC6D82}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		AMDCaProjectFile = D:\YuGo\Visual Studio 2005\Projects\se\CodeAnalyst\se.caw
+		AMDCaPersistentStartup = se
+		AMDCaPersistentConfig = Debug|Win32
+	EndGlobalSection
+EndGlobal

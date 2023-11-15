@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ookprotocol", "ookprotocol\ookprotocol.vcproj", "{C3FE9B83-B589-4107-BCAD-0AE14D098DB5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sbdtest", "sbdtest\sbdtest.vcproj", "{643A7402-EE82-440C-B00A-B86403A7A012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3FE9B83-B589-4107-BCAD-0AE14D098DB5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3FE9B83-B589-4107-BCAD-0AE14D098DB5}.Debug|Win32.Build.0 = Debug|Win32
+		{C3FE9B83-B589-4107-BCAD-0AE14D098DB5}.Release|Win32.ActiveCfg = Release|Win32
+		{C3FE9B83-B589-4107-BCAD-0AE14D098DB5}.Release|Win32.Build.0 = Release|Win32
+		{643A7402-EE82-440C-B00A-B86403A7A012}.Debug|Win32.ActiveCfg = Debug|Win32
+		{643A7402-EE82-440C-B00A-B86403A7A012}.Debug|Win32.Build.0 = Debug|Win32
+		{643A7402-EE82-440C-B00A-B86403A7A012}.Release|Win32.ActiveCfg = Release|Win32
+		{643A7402-EE82-440C-B00A-B86403A7A012}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

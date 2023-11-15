@@ -1,0 +1,286 @@
+// seDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "se.h"
+#include "seDlg.h"
+#include "WinScreen.h"
+#include "WinDbg.h"
+
+#include "siegecfg.h"
+
+#include "MsgPump.h"
+#include "RectWidget.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CAboutDlg dialog used for App About
+
+class CAboutDlg : public CDialog
+{
+public:
+	CAboutDlg();
+
+	// Dialog Data
+	enum { IDD = IDD_ABOUTBOX };
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+
+	// Implementation
+protected:
+	DECLARE_MESSAGE_MAP()
+};
+
+CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
+{
+}
+
+void CAboutDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+}
+
+BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
+END_MESSAGE_MAP()
+
+
+// CseDlg dialog
+
+
+afx_msg void CseDlg::OnClose( )
+{
+	if(pScreen) 
+	{
+		delete pScreen;
+		siege_dbg(L"pScreen deleted\n");
+
+		siege::MsgPump *pump =siege::MsgPump::getinstance();
+		pump->deinit();
+	}
+	siege::CDebugMsg *pDbgMsg = CWinDbg::getInstance();
+	((CWinDbg*)pDbgMsg)->deinit();
+
+
+	CDialog::OnClose();
+}
+
+CseDlg::CseDlg(CWnd* pParent /*=NULL*/)
+: CDialog(CseDlg::IDD, pParent)
+{
+	autoinit = false;
+	pScreen = NULL;
+	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+}
+
+void CseDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+}
+
+BEGIN_MESSAGE_MAP(CseDlg, CDialog)
+	ON_WM_SYSCOMMAND()
+	ON_WM_PAINT()
+	ON_WM_QUERYDRAGICON()
+	ON_WM_TIMER()
+	ON_WM_CLOSE()
+	//}}AFX_MSG_MAP
+	ON_BN_CLICKED(IDC_Init, &CseDlg::OnBnClickedInit)
+	ON_BN_CLICKED(IDC_Deinit, &CseDlg::OnBnClickedDeinit)
+END_MESSAGE_MAP()
+
+
+// CseDlg message handlers
+
+BOOL CseDlg::OnInitDialog()
+{
+	CDialog::OnInitDialog();
+
+	// Add "About..." menu item to system menu.
+
+	// IDM_ABOUTBOX must be in the system command range.
+	ASSERT((IDM_ABOUTBOX & 0xFFF0) == IDM_ABOUTBOX);
+	ASSERT(IDM_ABOUTBOX < 0xF000);
+
+	CMenu* pSysMenu = GetSystemMenu(FALSE);
+	if (pSysMenu != NULL)
+	{
+		CString strAboutMenu;
+		strAboutMenu.LoadString(IDS_ABOUTBOX);
+		if (!strAboutMenu.IsEmpty())
+		{
+			pSysMenu->AppendMenu(MF_SEPARATOR);
+			pSysMenu->AppendMenu(MF_STRING, IDM_ABOUTBOX, strAboutMenu);
+		}
+	}
+
+	// Set the icon for this dialog.  The framework does this automatically
+	//  when the application's main window is not a dialog
+	SetIcon(m_hIcon, TRUE);			// Set big icon
+	SetIcon(m_hIcon, FALSE);		// Set small icon
+
+	// TODO: Add extra initialization here
+	if(autoinit)
+	{
+		pScreen = new siege::CWinScreen(screen_w,screen_h);
+		siege_dbg(L"pScreen allocated successfully\n");
+
+		pScreen->SetPixel(10,10);
+		pScreen->blit();
+		SetTimer(0,10,NULL);
+	}
+
+	return TRUE;  // return TRUE  unless you set the focus to a control
+}
+
+void CseDlg::OnSysCommand(UINT nID, LPARAM lParam)
+{
+	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
+	{
+		CAboutDlg dlgAbout;
+		dlgAbout.DoModal();
+	}
+	else
+	{
+		CDialog::OnSysCommand(nID, lParam);
+	}
+}
+
+// If you add a minimize button to your dialog, you will need the code below
+//  to draw the icon.  For MFC applications using the document/view model,
+//  this is automatically done for you by the framework.
+
+void CseDlg::OnPaint()
+{
+	if (IsIconic())
+	{
+		CPaintDC dc(this); // device context for painting
+
+		SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.GetSafeHdc()), 0);
+
+		// Center icon in client rectangle
+		int cxIcon = GetSystemMetrics(SM_CXICON);
+		int cyIcon = GetSystemMetrics(SM_CYICON);
+		CRect rect;
+		GetClientRect(&rect);
+		int x = (rect.Width() - cxIcon + 1) / 2;
+		int y = (rect.Height() - cyIcon + 1) / 2;
+
+		// Draw the icon
+		dc.DrawIcon(x, y, m_hIcon);
+	}
+	else
+	{
+		CDialog::OnPaint();
+	}
+}
+
+// The system calls this function to obtain the cursor to display while the user drags
+//  the minimized window.
+HCURSOR CseDlg::OnQueryDragIcon()
+{
+	return static_cast<HCURSOR>(m_hIcon);
+}
+
+void processevent(siege::CSObject &r)
+{
+	siege::MsgPump *p = siege::MsgPump::getinstance();
+	siege::CWidget *w = (siege::CWidget *)&r;
+	w->HandleEvent((siege::CSEvent &)p->pEvent->GetFirst());
+}
+
+void drawwidget(siege::CSObject &r)
+{
+	siege::CWidget *w = (siege::CWidget *)&r;
+	
+	if(w->Draw())
+	{
+		siege::CScreen::instance->redraw=true;
+	}
+}
+
+void CseDlg::OnTimer(UINT_PTR nIDEvent)
+{
+	//pScreen->SetPixel(rand()%200,rand()%200);
+	//#define ww 20
+	//
+	//	pScreen->color=0;
+	//	pScreen->FillRect(0,0,pScreen->width,pScreen->height);
+	//	//pScreen->color=rand();
+	//	for(int i=0;i<50;i++)
+	//	{
+	//		pScreen->color=rand();
+	//		pScreen->FillRect(rand()%(pScreen->width -ww),rand()%(pScreen->height -ww),ww,ww );
+	//	}
+
+	siege::MsgPump *p = siege::MsgPump::getinstance();
+	if(p->IsEvent())
+	{
+
+		p->pChild->foreach(processevent);
+		siege::CSObject *o=&p->pEvent->RemoveFirst();
+		delete o;// don't forget this
+		o=NULL;
+
+		p->pChild->foreach(drawwidget);
+		//pScreen->FlodFill(0,0,pScreen->GetPixel(0,0));
+		pScreen->blit();
+	}
+
+
+}
+
+
+void CseDlg::OnBnClickedInit()
+{
+	// TODO: Add your control notification handler code here
+	if(!pScreen)
+	{
+		pScreen = new siege::CWinScreen(screen_w,screen_h);
+		siege_dbg(L"pScreen allocated\n");
+
+		pScreen->SetPixel(10,10);
+		//	pScreen->blit();
+
+		siege::MsgPump *p = siege::MsgPump::getinstance();
+		for(int i=0;i<100;i++)
+			p->AddChild(*new siege::CRectWidget((rand()%(screen_w-20)),(rand()%(screen_h-20)),rand()));
+
+		p->pChild->foreach(drawwidget);
+		pScreen->blit();
+
+		SetTimer(0,1,NULL);
+	}
+	else
+	{
+		AfxMessageBox(L"Already inited");
+	}
+}
+
+void CseDlg::OnBnClickedDeinit()
+{
+	// TODO: Add your control notification handler code here
+	if(pScreen)
+	{
+		KillTimer(0);
+		delete pScreen;
+		pScreen = NULL;
+		siege_dbg(L"pScreen deleted\n");
+
+		siege::MsgPump *pump =siege::MsgPump::getinstance();
+		pump->deinit();
+		siege_dbg(L"msgpump deleted\n");
+
+
+		//siege::CDebugMsg *pDbgMsg = CWinDbg::getInstance();
+		//((CWinDbg*)pDbgMsg)->deinit();
+
+	}
+	else
+	{
+		AfxMessageBox(L"Nothing to deinit");
+	}
+}

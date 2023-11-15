@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Windows">
+      <UniqueIdentifier>{9b5e0714-a601-4358-950c-7a1d943cb294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mfc framework">
+      <UniqueIdentifier>{f2829944-864c-4f1b-bdb0-6af8a1106833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cdef.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugMsg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPump.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RectWidget.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SContainer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEvent.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="siegecfg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="siegetypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SObject.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SiegeWnd.h">
+      <Filter>Source Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDbg.h">
+      <Filter>Source Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScreen.h">
+      <Filter>Source Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClInclude>
+    <ClInclude Include="se.h">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClInclude>
+    <ClInclude Include="seDlg.h">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SBWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DebugMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RectWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SiegeWnd.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="WinDbg.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScreen.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="se.cpp">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClCompile>
+    <ClCompile Include="seDlg.cpp">
+      <Filter>Source Files\mfc framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\se.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\se.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="se.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

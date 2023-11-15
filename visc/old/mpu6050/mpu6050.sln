@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpu6050", "mpu6050\mpu6050.vcproj", "{1AC4FD56-451A-43D0-8DAF-F06D68894895}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialtest", "serialtest\serialtest.vcproj", "{7C2765CD-DA27-4F3F-B651-9B65A4C8C6A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp_opoverload", "cpp_opoverload\cpp_opoverload.vcproj", "{75CD3458-0AB0-4440-A6AC-AFDC91710EA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC4FD56-451A-43D0-8DAF-F06D68894895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AC4FD56-451A-43D0-8DAF-F06D68894895}.Debug|Win32.Build.0 = Debug|Win32
+		{1AC4FD56-451A-43D0-8DAF-F06D68894895}.Release|Win32.ActiveCfg = Release|Win32
+		{1AC4FD56-451A-43D0-8DAF-F06D68894895}.Release|Win32.Build.0 = Release|Win32
+		{7C2765CD-DA27-4F3F-B651-9B65A4C8C6A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C2765CD-DA27-4F3F-B651-9B65A4C8C6A0}.Debug|Win32.Build.0 = Debug|Win32
+		{7C2765CD-DA27-4F3F-B651-9B65A4C8C6A0}.Release|Win32.ActiveCfg = Release|Win32
+		{7C2765CD-DA27-4F3F-B651-9B65A4C8C6A0}.Release|Win32.Build.0 = Release|Win32
+		{75CD3458-0AB0-4440-A6AC-AFDC91710EA3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75CD3458-0AB0-4440-A6AC-AFDC91710EA3}.Debug|Win32.Build.0 = Debug|Win32
+		{75CD3458-0AB0-4440-A6AC-AFDC91710EA3}.Release|Win32.ActiveCfg = Release|Win32
+		{75CD3458-0AB0-4440-A6AC-AFDC91710EA3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
